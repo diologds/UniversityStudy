@@ -1,48 +1,40 @@
 package javaguru.pack;
 
 
+import java.util.Scanner;
+
 public class TicTakToe {
 
-    final int FIELD_SIZE = 3;
-    char[][] field = new char[FIELD_SIZE][FIELD_SIZE];
-
-    public void printField()
-    {
-        for(int i = 0 ; i < FIELD_SIZE ; i++)
-        {
-            for(int j = 0 ; j < FIELD_SIZE ; j++)
-            {
-                System.out.println(field[i][j]);
-            }
-        }
-    }
-
-    public void fillField()
-    {
-        for(int i = 0 ; i < FIELD_SIZE ; i++)
-        {
-            for(int j = 0 ; j < FIELD_SIZE ; j++)
-            {
-                field[i][j] = ' ';
-            }
-        }
-    }
-
-    public boolean makeMove(Player player , int cordX , int cordY)
-    {
-        char symbol = player.getPlayerSymbol();
-
-        if (field[cordX][cordY] == ' ')
-        {
-            field[cordX][cordY] = symbol;
-            return true;
-        }else{
-            return false;
-        }
-    }
 
     public static void main(String []args)
     {
+        boolean gameStatus = false , moveStatus = false;
+        Scanner scan = new Scanner(System.in);
+        int cordX  , cordY ;
+
+        Player firstPlayer = new Player("Teodor" , "Fo-Vintalevskis" ,'X');
+        Player secondPlayer = new Player("Midora" , "Visauhova" ,'O');
+        Player mainPlayer;
+        GameMechanics mechanic = new GameMechanics();
+
+        while (!gameStatus)
+        {
+            mainPlayer = mechanic.changePlayer(firstPlayer,secondPlayer);
+            while (!moveStatus)
+            {
+                System.out.println("Input row and colum numbers ");
+                cordX = scan.nextInt();
+                cordY = scan.nextInt();
+                moveStatus = mechanic.makeMove(mainPlayer , cordX , cordY);
+            }
+
+            mechanic.printField();
+            gameStatus = mechanic.checkGameOver(mainPlayer);
+            if(gameStatus)
+                System.out.println( mainPlayer.getName() +" " + mainPlayer.getSurName()+"  Win");
+            moveStatus = false;
+
+        }
 
     }
 
