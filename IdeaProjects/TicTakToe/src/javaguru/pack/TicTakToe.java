@@ -8,6 +8,7 @@ public class TicTakToe {
 
     public static void main(String []args)
     {
+        GameForm form = new  GameForm();
         boolean gameStatus = false , moveStatus = false;
         Scanner scan = new Scanner(System.in);
         int cordX  , cordY ;

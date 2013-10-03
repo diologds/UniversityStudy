@@ -4,9 +4,11 @@
     <list default="true" id="c59d947f-34a1-40cd-9e6a-a0ca950a7db3" name="Default" comment="" />
     <ignored path="TicTakToe.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/TicTakToe.java" changelist="c59d947f-34a1-40cd-9e6a-a0ca950a7db3" time="1380653075714" ignored="false" />
+    <file path="/TicTakToe.java" changelist="c59d947f-34a1-40cd-9e6a-a0ca950a7db3" time="1380832937929" ignored="false" />
     <file path="/Player.java" changelist="c59d947f-34a1-40cd-9e6a-a0ca950a7db3" time="1380483760590" ignored="false" />
     <file path="/GameMechanics.java" changelist="c59d947f-34a1-40cd-9e6a-a0ca950a7db3" time="1380652018961" ignored="false" />
+    <file path="/GameForm.java" changelist="c59d947f-34a1-40cd-9e6a-a0ca950a7db3" time="1380834679218" ignored="false" />
+    <file path="/GraphicdForm.java" changelist="c59d947f-34a1-40cd-9e6a-a0ca950a7db3" time="1380834896086" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +68,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TicTakToe.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TicTakToe.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/javaguru/pack/TicTakToe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="89" selection-start="887" selection-end="887" vertical-scroll-proportion="1.3433243">
+            <state line="6" column="0" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameForm.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/javaguru/pack/GameForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="47" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphicsForm.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/javaguru/pack/GraphicsForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="20" selection-start="665" selection-end="665" vertical-scroll-proportion="1.1086956">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,7 +100,7 @@
       <file leaf-file-name="GameMechanics.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/javaguru/pack/GameMechanics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="30" selection-start="2234" selection-end="2246" vertical-scroll-proportion="0.0">
+            <state line="52" column="26" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,6 +128,9 @@
         <option value="$PROJECT_DIR$/src/javaguru/pack/Player.java" />
         <option value="$PROJECT_DIR$/src/javaguru/pack/GameMechanics.java" />
         <option value="$PROJECT_DIR$/src/javaguru/pack/TicTakToe.java" />
+        <option value="$PROJECT_DIR$/src/javaguru/pack/GraphicdForm.java" />
+        <option value="$PROJECT_DIR$/src/javaguru/pack/GameForm.java" />
+        <option value="$PROJECT_DIR$/src/javaguru/pack/GraphicsForm.java" />
       </list>
     </option>
   </component>
@@ -143,8 +168,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -193,7 +218,7 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="appearance" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.ssh/UniversityStudy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GameNumber" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -332,6 +357,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -379,7 +409,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -393,14 +423,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67235494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -470,6 +500,55 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/javaguru/pack/TicTakToe.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="72" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaguru/pack/GameForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaguru/pack/GameMechanics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="30" selection-start="2234" selection-end="2246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaguru/pack/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="308" selection-end="310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaguru/pack/TicTakToe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="89" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaguru/pack/GameMechanics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="30" selection-start="2234" selection-end="2246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaguru/pack/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="308" selection-end="310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaguru/pack/TicTakToe.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="32" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -505,15 +584,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javaguru/pack/GameMechanics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="30" selection-start="2234" selection-end="2246" vertical-scroll-proportion="0.0">
+        <state line="52" column="26" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/javaguru/pack/TicTakToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="89" selection-start="887" selection-end="887" vertical-scroll-proportion="1.3433243">
+        <state line="6" column="0" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaguru/pack/GameForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="47" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javaguru/pack/GraphicsForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="20" selection-start="665" selection-end="665" vertical-scroll-proportion="1.1086956">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
