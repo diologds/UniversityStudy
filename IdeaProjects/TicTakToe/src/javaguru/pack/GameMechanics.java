@@ -4,7 +4,8 @@ package javaguru.pack;
 public class GameMechanics {
 
     final int FIELD_SIZE = 3;
-    char[][] field = new char[FIELD_SIZE][FIELD_SIZE];
+    //char[][] field = new char[FIELD_SIZE][FIELD_SIZE];
+    TableRows[][] table = new TableRows[FIELD_SIZE][FIELD_SIZE];
     int iterator = 0;
 
     public void printField()
@@ -13,7 +14,7 @@ public class GameMechanics {
         {
             for(int j = 0 ; j < FIELD_SIZE ; j++)
             {
-                System.out.print(field[i][j]);
+                System.out.print(table[i][j].getSymbol());
             }
             System.out.println();
         }
@@ -25,7 +26,7 @@ public class GameMechanics {
         {
             for(int j = 0 ; j < FIELD_SIZE ; j++)
             {
-                field[i][j] = '+';
+                table[i][j]  = new TableRows( 0, 0);
             }
         }
     }
@@ -34,9 +35,9 @@ public class GameMechanics {
     {
         char symbol = player.getPlayerSymbol();
 
-        if (field[cordX][cordY] == '+')
+        if (table[cordX][cordY].getSymbol() == '*')
         {
-            field[cordX][cordY] = symbol;
+            table[cordX][cordY].setSymbol(symbol);
             return true;
         }else{
             return false;
@@ -48,42 +49,42 @@ public class GameMechanics {
         char symbol = player.getPlayerSymbol();
         boolean status = false;
 
-        if((field[0][0] == symbol) && (field[1][0] == symbol) && (field[2][0] == symbol))
+        if((table[0][0].getSymbol() == symbol) && (table[1][0].getSymbol() == symbol) && (table[2][0].getSymbol() == symbol))
         {
             status = true;
         }
 
-        if((field[0][1] == symbol) && (field[1][1] == symbol) && (field[2][1] == symbol))
+        if((table[0][1].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[2][1].getSymbol() == symbol))
         {
             status = true;
         }
 
-        if((field[0][1] == symbol) && (field[1][1] == symbol) && (field[2][1] == symbol))
+        if((table[0][1].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[2][1].getSymbol() == symbol))
         {
             status = true;
         }
 
-        if((field[0][0] == symbol) && (field[0][1] == symbol) && (field[0][2] == symbol))
+        if((table[0][0].getSymbol() == symbol) && (table[0][1].getSymbol() == symbol) && (table[0][2].getSymbol() == symbol))
         {
             status = true;
         }
 
-        if((field[1][0] == symbol) && (field[1][1] == symbol) && (field[1][2] == symbol))
+        if((table[1][0].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[1][2].getSymbol() == symbol))
         {
             status = true;
         }
 
-        if((field[2][0] == symbol) && (field[2][1] == symbol) && (field[2][2] == symbol))
+        if((table[2][0].getSymbol() == symbol) && (table[2][1].getSymbol() == symbol) && (table[2][2].getSymbol() == symbol))
         {
             status = true;
         }
 
-        if((field[0][0] == symbol) && (field[1][1] == symbol) && (field[2][2] == symbol))
+        if((table[0][0].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[2][2].getSymbol() == symbol))
         {
             status = true;
         }
 
-        if((field[0][2] == symbol) && (field[1][1] == symbol) && (field[2][0] == symbol))
+        if((table[0][2].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[2][0].getSymbol() == symbol))
         {
             status = true;
         }
