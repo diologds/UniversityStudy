@@ -1,5 +1,4 @@
-package javaguru.pack;
-
+package javaGuru.pack;
 
 public class Player {
 

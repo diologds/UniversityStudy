@@ -1,12 +1,13 @@
-package javaguru.pack;
-
+package javaGuru.pack;
 
 public class GameMechanics {
 
-    final int FIELD_SIZE = 3;
-    //char[][] field = new char[FIELD_SIZE][FIELD_SIZE];
-    TableRows[][] table = new TableRows[FIELD_SIZE][FIELD_SIZE];
+    static final int FIELD_SIZE = 3;
+    static TableRows[][] table = new TableRows[FIELD_SIZE][FIELD_SIZE];
     int iterator = 0;
+    int cordBaseValue = 50 , cordXFirst = 0 ,cordYFirst = 0 , cordXSecond = 0 ,cordYSecond = 0; 
+    int middeleCordX =0 , middeleCordY = 0;
+	
 
     public void printField()
     {
@@ -26,7 +27,15 @@ public class GameMechanics {
         {
             for(int j = 0 ; j < FIELD_SIZE ; j++)
             {
-                table[i][j]  = new TableRows( 0, 0);
+            	cordXFirst = cordBaseValue+(j*cordBaseValue);
+            	cordYFirst = cordBaseValue*2+(i*cordBaseValue);
+            	cordXSecond = cordBaseValue*2+(j*cordBaseValue);
+            	cordYSecond = cordBaseValue+(i*cordBaseValue);
+	
+            	middeleCordX = (int)((cordXFirst + cordXSecond)/2);
+            	middeleCordY = (int)((cordYFirst + cordYSecond)/2);
+            	
+                table[i][j]  = new TableRows( middeleCordX, middeleCordY , cordXFirst, cordYFirst,cordXSecond, cordYSecond );
             }
         }
     }
@@ -47,49 +56,57 @@ public class GameMechanics {
     public boolean checkGameOver(Player player)
     {
         char symbol = player.getPlayerSymbol();
-        boolean status = false;
 
         if((table[0][0].getSymbol() == symbol) && (table[1][0].getSymbol() == symbol) && (table[2][0].getSymbol() == symbol))
         {
-            status = true;
+        	return true;
         }
 
         if((table[0][1].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[2][1].getSymbol() == symbol))
         {
-            status = true;
+        	return true;
         }
 
         if((table[0][1].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[2][1].getSymbol() == symbol))
         {
-            status = true;
+        	return true;
         }
 
         if((table[0][0].getSymbol() == symbol) && (table[0][1].getSymbol() == symbol) && (table[0][2].getSymbol() == symbol))
         {
-            status = true;
+        	return true;
         }
 
         if((table[1][0].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[1][2].getSymbol() == symbol))
         {
-            status = true;
+        	return true;
         }
 
         if((table[2][0].getSymbol() == symbol) && (table[2][1].getSymbol() == symbol) && (table[2][2].getSymbol() == symbol))
         {
-            status = true;
+        	return true;
         }
 
         if((table[0][0].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[2][2].getSymbol() == symbol))
         {
-            status = true;
+        	return true;
         }
 
         if((table[0][2].getSymbol() == symbol) && (table[1][1].getSymbol() == symbol) && (table[2][0].getSymbol() == symbol))
         {
-            status = true;
+        	return true;
+        }
+        
+        for(int i = 0 ; i< 3 ; i++)
+        {
+        	for(int j = 0 ; j< 3 ; j++)
+        	{
+        		if(table[i][j].getSymbol() == '*')
+        			return false;
+        	}
         }
 
-        return status;
+        return true;
     }
 
     public Player changePlayer(Player first,  Player second)

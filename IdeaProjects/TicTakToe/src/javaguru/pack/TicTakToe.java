@@ -1,41 +1,21 @@
-package javaguru.pack;
-
+package javaGuru.pack;
 
 import java.util.Scanner;
 
 public class TicTakToe {
 
+	static GameForm form = new  GameForm();
+	static Scanner scan = new Scanner(System.in);
 
-    public static void main(String []args)
+	static Player firstPlayer = new Player("Teodor" , "Fo-Vintalevskis" ,'X');
+	static Player secondPlayer = new Player("Midora" , "Visauhova" ,'O');
+	static Player mainPlayer;
+	static GameMechanics mechanic = new GameMechanics();
+
+
+	public static void main(String []args)
     {
-        GameForm form = new  GameForm();
-        boolean gameStatus = false , moveStatus = false;
-        Scanner scan = new Scanner(System.in);
-        int cordX  , cordY ;
 
-        Player firstPlayer = new Player("Teodor" , "Fo-Vintalevskis" ,'X');
-        Player secondPlayer = new Player("Midora" , "Visauhova" ,'O');
-        Player mainPlayer;
-        GameMechanics mechanic = new GameMechanics();
-
-        while (!gameStatus)
-        {
-            mainPlayer = mechanic.changePlayer(firstPlayer,secondPlayer);
-            while (!moveStatus)
-            {
-                System.out.println("Input row and colum numbers ");
-                cordX = scan.nextInt();
-                cordY = scan.nextInt();
-                moveStatus = mechanic.makeMove(mainPlayer , cordX , cordY);
-            }
-
-            mechanic.printField();
-            gameStatus = mechanic.checkGameOver(mainPlayer);
-            if(gameStatus)
-                System.out.println( mainPlayer.getName() +" " + mainPlayer.getSurName()+"  Win");
-            moveStatus = false;
-
-        }
 
     }
 
