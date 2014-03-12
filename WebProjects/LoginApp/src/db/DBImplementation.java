@@ -11,6 +11,7 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
+import domain.HTMLImage;
 import domain.User;
 
 @SuppressWarnings("unchecked")
@@ -32,6 +33,9 @@ public class DBImplementation extends DBTools implements DBInterface {
 			document.put("name", user.getName());
 			document.put("surname", user.getSurname());
 			document.put("friends", user.getFriends());
+			document.put("imageName", user.getImage().getFilename());
+			document.put("imageExtension", user.getImage().getExtension());
+
 			table.insert(document);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -62,6 +66,10 @@ public class DBImplementation extends DBTools implements DBInterface {
 				user.setName((String) object.get("name"));
 				user.setSurname((String) object.get("surname"));
 				user.setFriends((List<String>) object.get("friends"));
+				String filename = (String) object.get("imageName");
+				String extension = (String) object.get("imageExtension");
+				user.setImage(new HTMLImage(filename, extension));
+
 				return user;
 			} else {
 				System.out.println("User not found");

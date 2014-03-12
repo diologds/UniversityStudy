@@ -11,20 +11,19 @@ public class User implements Serializable {
 	private String name;
 	private String surname;
 	private List<String> friends;
-	private String pictureName;
-	private String base64;
+	private HTMLImage image;
 
 	public User() {
 	}
 
 	public User(String login, String password, String name, String surname,
-			List<String> friends) {
+			List<String> friends, HTMLImage image) {
 		this.login = login;
 		this.password = password;
 		this.name = name;
 		this.surname = surname;
 		this.friends = friends;
-
+		this.image = image;
 	}
 
 	public String getLogin() {
@@ -67,20 +66,12 @@ public class User implements Serializable {
 		this.friends = friends;
 	}
 
-	public String getPictureName() {
-		return pictureName;
+	public HTMLImage getImage() {
+		return image;
 	}
 
-	public void setPictureName(String pictureName) {
-		this.pictureName = pictureName;
-	}
-
-	public String getBase64() {
-		return base64;
-	}
-
-	public void setBase64(String base64) {
-		this.base64 = base64;
+	public void setImage(HTMLImage image) {
+		this.image = image;
 	}
 
 	@Override
@@ -110,6 +101,9 @@ public class User implements Serializable {
 				comparedObject.getFriends())
 				: comparedObject.getFriends() != null)
 			return false;
+		if (image != null ? !image.equals(comparedObject.getImage())
+				: comparedObject.getImage() != null)
+			return false;
 		return true;
 	}
 
@@ -120,6 +114,7 @@ public class User implements Serializable {
 		result = 31 * result + (name != null ? name.hashCode() : 0);
 		result = 31 * result + (surname != null ? surname.hashCode() : 0);
 		result = 31 * result + (friends != null ? friends.hashCode() : 0);
+		result = 31 * result + (image != null ? image.hashCode() : 0);
 		return result;
 	}
 
@@ -129,11 +124,12 @@ public class User implements Serializable {
 			return "User{" + "Login=" + login + ", password=" + password
 					+ ", userName='" + name + '\'' + ", userSurname='"
 					+ surname + '\'' + ", userFriends='" + friends.toString()
-					+ '\'' + '}';
+					+ '\'' + ", Image name : " + image.getFilename() + '}';
 		} else {
 			return "User{" + "Login=" + login + ", password=" + password
 					+ ", userName='" + name + '\'' + ", userSurname='"
-					+ surname + '\'' + ", userFriends='" + "Empty" + '\'' + '}';
+					+ surname + '\'' + ", Image name : " + image.getFilename()
+					+ '}';
 		}
 	}
 

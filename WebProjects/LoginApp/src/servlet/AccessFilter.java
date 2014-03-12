@@ -25,10 +25,19 @@ public class AccessFilter implements Filter {
 
 		HttpServletRequest httpRequest = (HttpServletRequest) req;
 		HttpServletResponse httpResponse = (HttpServletResponse) res;
+
 		if (httpRequest.getSession().getAttribute("user") == null) {
 			RequestDispatcher dispacher = httpRequest
 					.getRequestDispatcher("login.jsp");
 			dispacher.forward(httpRequest, httpResponse);
+		}
+
+		if (httpRequest.getRequestURL().toString().contains("login")) {
+			if (httpRequest.getSession().getAttribute("user") != null) {
+				RequestDispatcher dispacher = httpRequest
+						.getRequestDispatcher("user.jsp");
+				dispacher.forward(httpRequest, httpResponse);
+			}
 		}
 
 	}
