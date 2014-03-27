@@ -6,17 +6,17 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Iterator;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 public class ListTest {
 
-	static LinkedList<String> list;
-	static String[] message = { "Hello", "World", "Me", "You", "Cat", "Dog" };
+	LinkedList<String> list;
+	String[] message = { "Hello", "World", "Me", "You", "Cat", "Dog" };
 
-	@BeforeClass
-	public static void testSetup() {
+	@Before
+	public void testSetup() {
 
 		list = new LinkedList<String>();
 
@@ -24,9 +24,9 @@ public class ListTest {
 			list.add(message[i]);
 	}
 
-	@AfterClass
-	public static void testCleanup() {
-
+	@After
+	public void testCleanup() {
+		list.removeAll();
 	}
 
 	@Test
@@ -66,10 +66,34 @@ public class ListTest {
 	}
 
 	@Test
-	public void testRemove() {
+	public void testRemoveLast() {
 		String value = list.get(list.size());
 		list.remove();
-		assertFalse("Element wasent deleted", list.contains(value));
+		assertFalse("Element was not deleted", list.contains(value));
+	}
+
+	@Test
+	public void testRemoveObject() {
+		list.remove(message[3]);
+		assertFalse("Element was not deleted", list.contains(message[3]));
+	}
+
+	@Test
+	public void testRemoveIndex() {
+		list.remove(3);
+		assertFalse("Element was not deleted", list.contains(message[3]));
+	}
+
+	@Test
+	public void testRemoveAll() {
+		list.removeAll();
+		for (int i = 0; i < message.length; i++)
+			assertFalse("Element was not deleted", list.contains(message[i]));
+	}
+
+	@Test(expected = IndexOutOfBoundsException.class)
+	public void testOutOfBound() {
+		list.get(list.size() + 3);
 	}
 
 }

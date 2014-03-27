@@ -11,13 +11,12 @@ public class LinkedList<T> {
 		int size = 0;
 		if (!isEmpty()) {
 			Element<T> next = first;
-			while (next != null) {
+			while (next.getNext() != null) {
 				size++;
 				next = next.getNext();
 			}
-		} else {
-			return 0;
 		}
+
 		return size;
 	}
 
@@ -26,6 +25,7 @@ public class LinkedList<T> {
 	}
 
 	public boolean contains(T o) {
+
 		if (!isEmpty()) {
 			Element<T> next = first;
 			while (next != null) {
@@ -34,9 +34,8 @@ public class LinkedList<T> {
 				}
 				next = next.getNext();
 			}
-		} else {
-			return false;
 		}
+
 		return false;
 	}
 
@@ -62,47 +61,62 @@ public class LinkedList<T> {
 
 	public boolean remove() {
 
+		if (first == null)
+			return false;
+
 		Element<T> next;
+		Element<T> previous;
+
 		if (first.getNext() != null) {
 			next = first;
+			previous = null;
 		} else {
 			first = null;
 			return true;
 		}
 
 		while (next.getNext() != null) {
+			previous = next;
 			next = next.getNext();
 		}
-		next = null;
+		previous.setNext(null);
+
 		return true;
 	}
 
 	public boolean remove(T o) {
 
 		Element<T> next;
+		Element<T> previous;
+
 		if (first.getNext() != null) {
 			next = first;
+			previous = null;
 		} else {
 			first = null;
 			return true;
 		}
 
-		while (next != null) {
+		while (next.getNext() != null) {
 			if (next.getData().equals(o)) {
-				next = null;
+				previous.setNext(next.getNext());
 				return true;
 			}
+			previous = next;
 			next = next.getNext();
 		}
-		next = null;
+
 		return false;
 	}
 
 	public boolean remove(int index) {
 
 		Element<T> next;
+		Element<T> previous;
+
 		if (first.getNext() != null) {
 			next = first;
+			previous = null;
 		} else {
 			first = null;
 			return true;
@@ -112,15 +126,22 @@ public class LinkedList<T> {
 			if (next == null)
 				return false;
 			if (i == index) {
-				next = null;
+				previous.setNext(next.getNext());
 				return true;
 			}
+			previous = next;
 			next = next.getNext();
 		}
 		return false;
 	}
 
-	public T get(int index) {
+	public void removeAll() {
+		if (first != null) {
+			first = null;
+		}
+	}
+
+	public T get(int index) throws IndexOutOfBoundsException {
 		Element<T> next;
 		if (first != null) {
 			next = first;
@@ -129,8 +150,10 @@ public class LinkedList<T> {
 		}
 
 		for (int i = 0; i <= index; i++) {
-			if (next == null)
-				return null;
+			if (next == null) {
+				throw new IndexOutOfBoundsException("Index " + index
+						+ " is out of bounds!");
+			}
 			if (i == index)
 				return next.getData();
 			next = next.getNext();
@@ -157,6 +180,15 @@ public class LinkedList<T> {
 			return first.getData();
 		}
 		return null;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		for (int i = 0; i <= size(); i++) {
+			builder.append("Element " + i + " :" + get(i) + "\n");
+		}
+		return builder.toString();
 	}
 
 	public static class MyIterator<T> implements Iterator<T> {
