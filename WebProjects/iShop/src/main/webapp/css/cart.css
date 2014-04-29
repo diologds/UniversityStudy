@@ -1,0 +1,51 @@
+table
+{
+    border-collapse:collapse;
+}
+table, th, td
+{
+    border: 1px solid black;
+}
+
+th {
+    background-color: #4863A0;
+    color: white;
+}
+
+th td {
+    font-size: 14px;
+}
+
+td {
+    padding-left: 5px;
+}
+
+tr.odd td {
+    background-color: #E5E4E2;
+}
+
+tr.even td {
+    background-color: #98AFC7;
+}
+
+td.remove {
+    width: 60px;
+}
+
+td.article {
+    width: 100px;
+    font-weight: bold;
+}
+
+td.price {
+    width: 60px;
+}
+
+td.amount {
+    width: 40px;
+    text-align: center;
+    padding-left: 0;
+}
+
+a:link, a:visited  {color: navy;}      /* unvisited link, visited link */
+a:hover, a:active {color:#2554C7; text-decoration: none; }  /* mouse over link, selected link */

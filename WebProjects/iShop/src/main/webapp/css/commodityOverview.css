@@ -1,0 +1,31 @@
+#commodityOverview
+{
+    position:relative;
+    top:10px;
+    margin-left:5px;
+    padding: 0 3px 5px 3px;
+    font-size: 0.85em;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    clear:both;
+}
+
+#commodityOverview td
+{
+    font-size: 0.9em;
+    border: 1px solid gray;
+    padding: 3px 7px 2px 7px;
+
+}
+
+#commodityOverviewCol1
+{
+    width:80px;
+    text-align:left;
+}
+#commodityOverviewCol2
+{
+    width:118px;
+    text-align:left;
+}
+

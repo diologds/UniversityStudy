@@ -1,0 +1,17 @@
+#commodityComments
+{
+    position:relative;
+    top:10px;
+    margin-left:5px;
+    padding: 3px 3px 3px 3px;
+    font-size: 0.85em;
+    clear:both;
+    overflow:auto;
+}
+#commodityComments p
+{
+    background-color:#f0f0ff;
+    font-size: 120%;
+    border: #D3D3D3 1px solid;
+    color: #000080;
+}

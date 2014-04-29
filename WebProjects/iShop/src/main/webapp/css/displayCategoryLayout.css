@@ -1,0 +1,70 @@
+#wrapper1
+{
+    width: 800px;
+    position:relative;
+
+}
+#wrapper2
+{
+    width: 800px;
+    position:relative;
+    top:100px;
+    overflow:auto;
+
+}
+#register
+{
+    margin-bottom: 0;
+    position: absolute;
+    top: 5px;
+    right:20px;
+
+}
+#search1
+{
+    margin-bottom: 0;
+    position:relative;
+    top:55px;
+
+}
+#nav
+{
+    margin-bottom: 0;
+    position:absolute;
+    top: 95px;
+    left: 5px;
+
+}
+#sidebar
+{
+    width: 190px;
+    margin-top: 10px;
+    float:left;
+}
+
+#main
+{
+    width:560px;
+    margin-left: 195px;
+
+}
+#footer
+{
+
+    position:relative;
+    margin-top: 20px;
+    border-top: 1px dashed;
+    padding: 5px 0 0 5px;
+    margin-right: 200px;
+    margin-left: 195px;
+    font-size:0.8em;
+    clear:both;
+
+}
+
+
+
+
+
+
+

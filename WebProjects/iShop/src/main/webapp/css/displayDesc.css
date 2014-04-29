@@ -1,0 +1,110 @@
+
+#gallery
+{
+    position:relative;
+    top: 10px;
+    padding: 5px 3px 5px 3px;
+    overflow:scroll;
+    border: 1px solid lightgray;
+
+}
+.photo img
+{
+    position: relative;
+    border: 1px solid gray;
+    padding: 4px;
+    float: left;
+    margin: 5px;
+
+}
+img
+{
+    height:70px;
+    width:auto;
+
+}
+#price
+{
+    display:inline-block;
+    position:absolute;
+    top: 10px;
+    width:auto;
+    height: 1em;
+    text-align:center;
+    padding: 8px 5px 10px 5px ;
+    background-color:red;
+    border: 1px solid blue;
+    color:white;
+
+}
+#action
+{
+    position:relative;
+    top:4px;
+    height:30px;
+
+}
+#action h5
+{
+    position:absolute;
+    top:22px;
+    margin-left:7em;
+}
+
+#action form[name=buy] input[type=submit]
+{
+    position:absolute;
+    top:22px;
+    margin-left:7em;
+    width:3em;
+
+}
+#action form[name=addToWishList] input[type=submit]
+{
+    position:absolute;
+    top:22px;
+    margin-left:20em;
+    width:auto;
+
+}
+#desc
+{
+    position:relative;
+    top:30px;
+    height: 200px;
+    padding: 5px 3px 5px 3px;
+    overflow:scroll;
+    border: 1px solid lightgray;
+    clear:both;
+}
+#descNav
+{
+    margin-bottom: 0;
+    position:relative;
+    top:  5px;
+}
+#descNav li
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#descNav a
+{
+    display: block;
+    font-size: 0.9em;
+    text-align:center;
+    text-decoration: none;
+    padding: 2px 2px 2px 3px;
+    width: 60px;
+    margin-left: 2px;
+    font-weight: normal;
+    margin-bottom: 2px;
+    border-right: 1px dashed lightgray;
+
+}
+
+
+
