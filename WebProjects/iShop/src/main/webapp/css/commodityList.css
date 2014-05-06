@@ -1,0 +1,53 @@
+#commodity
+{
+    font-family: 'Times New Roman';
+    width: 95%;
+    border-collapse: collapse;
+}
+#commodity caption
+{
+    text-align: center;
+    font-size: 1em;
+    padding-bottom:5px;
+    padding-top:15px;
+    font-weight:bold;
+
+}
+
+#commodity th, #commodity td
+{
+    font-size: 0.9em;
+    border: 1px solid gray;
+    padding: 3px 7px 2px 7px;
+
+}
+#commodity th
+{
+    text-transform:uppercase;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color:blue;
+    color: white;
+}
+#commodityName
+{
+
+}
+#commodityPrice
+{
+    width:50px;
+}
+#commodityBrand
+{
+    width:80px;
+}
+#commodityRef
+{
+    width:80px;
+}
+#buyButton
+{
+    width:60px;
+}
+
