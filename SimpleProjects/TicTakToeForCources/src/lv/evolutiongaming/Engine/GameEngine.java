@@ -17,18 +17,21 @@ public class GameEngine {
 	public void startGame() {
 		Scanner userInputScanner = new Scanner(System.in);
 		printMenu();
-
+		int userInput = Integer.parseInt(userInputScanner.nextLine());
+		procesUserInput(userInput);
+		userInputScanner.close();
 	}
 
 	public void printMenu() {
 		System.out.println("Please chouse game mode : ");
 		System.out.println("/t 1.PLayer vs Player");
 		System.out.println("/t 2.Player vs AI");
-		System.out.println("/t 3.AI vs AI");
+		System.out.println("/t 3.AI vs Player");
+		System.out.println("/t 4.AI vs AI");
 	}
 
 	public boolean validateUserInput(int userInput) {
-		if (userInput >= 1 && userInput <= 3)
+		if (userInput >= 1 && userInput <= 4)
 			return true;
 		else
 			return false;
@@ -39,15 +42,37 @@ public class GameEngine {
 			players.removeAll(players);
 		switch (userInput) {
 		case 1:
-			players.add(new HumanPlayer());
-			players.add(new HumanPlayer());
+			players.add(new HumanPlayer('X'));
+			players.add(new HumanPlayer('O'));
 			break;
 		case 2:
-			players.add(new HumanPlayer());
-			players.add(new AIPlayer());
+			players.add(new HumanPlayer('X'));
+			players.add(new AIPlayer('O'));
 			break;
 		case 3:
+			players.add(new AIPlayer('X'));
+			players.add(new HumanPlayer('O'));
+			break;
+		case 4:
+			players.add(new AIPlayer('X'));
+			players.add(new AIPlayer('O'));
 			break;
 		}
+	}
+
+	public void gameProcess() {
+		do {
+			for (Player player : players) {
+				player.makeMove(field);
+				if (analyzeCurrentGameState()) {
+					break;
+				}
+			}
+		} while (true);
+	}
+
+	private boolean analyzeCurrentGameState() {
+
+		return false;
 	}
 }
