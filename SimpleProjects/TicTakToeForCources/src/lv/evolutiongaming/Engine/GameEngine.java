@@ -70,7 +70,7 @@ public class GameEngine {
 				player.makeMove(field);
 				if (analyzeCurrentGameState()) {
 					System.out.println("Player : " + player.getPlayerSimbol()
-							+ " - Won");
+							+ " - Win");
 					break endOFGame;
 				}
 
