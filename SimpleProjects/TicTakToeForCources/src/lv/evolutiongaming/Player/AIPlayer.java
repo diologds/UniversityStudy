@@ -1,5 +1,7 @@
 package lv.evolutiongaming.Player;
 
+import java.util.Random;
+
 import lv.evolutiongaming.Field.Field;
 
 public class AIPlayer implements Player {
@@ -43,16 +45,18 @@ public class AIPlayer implements Player {
 		if (winMove != null)
 			return winMove;
 
-		for (int i = 0; i < 3; i++)
-			for (int j = 0; j < 3; j++)
-				if (field.getFieldEliment(i, j) == '*') {
-					field.placeToken(i, j, token);
-					int[] step = nextWinningMove(token == 'X' ? 'O' : 'X',
-							field);
-					field.placeToken(i, j, '*');
-					if (step != null)
-						return step;
-				}
+		if ((new Random().nextInt(100) + 1) < 50) {
+			for (int i = 0; i < 3; i++)
+				for (int j = 0; j < 3; j++)
+					if (field.getFieldEliment(i, j) == '*') {
+						field.placeToken(i, j, token);
+						int[] step = nextWinningMove(token == 'X' ? 'O' : 'X',
+								field);
+						field.placeToken(i, j, '*');
+						if (step != null)
+							return step;
+					}
+		}
 
 		if (field.getFieldEliment(1, 1) == '*')
 			return new int[] { 1, 1 };
