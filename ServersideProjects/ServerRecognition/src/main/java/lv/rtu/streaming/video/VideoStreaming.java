@@ -1,6 +1,6 @@
 package lv.rtu.streaming.video;
 
-import lv.rtu.maping.Mapping;
+import lv.rtu.maping.DataStreamMapping;
 import lv.rtu.recognition.RecognitionEngine;
 
 import javax.imageio.ImageIO;
@@ -25,32 +25,25 @@ public class VideoStreaming implements Runnable {
     public void run() {
         try {
 
-            DatagramSocket dsocket = new DatagramSocket(portServer);
-            DatagramSocket ssocket = new DatagramSocket();
+            DatagramSocket dSocket = new DatagramSocket(portServer);
+            DatagramSocket sSocket = new DatagramSocket();
 
             byte[] buffer = new byte[10048];
 
             DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
 
             do {
-                dsocket.receive(packet);
+                dSocket.receive(packet);
                 if (packet.getLength() > 0) {
 
                     InputStream in = new ByteArrayInputStream(packet.getData());
-
                     BufferedImage image = ImageIO.read(in);
-
-                    String host = Mapping.getDestination(packet.getAddress().toString().substring(1));
-
+                    String host = DataStreamMapping.getDestination(packet.getAddress().toString().substring(1));
                     System.out.println("Client IP : " + packet.getAddress().toString());
-
                     String result = RecognitionEngine.recogniseImage(image);
-
                     System.out.println("Result : " + result);
-
                     System.out.println("Sending data to port : " + portClient + " :: Client host :" + host);
-
-                    ssocket.send(new DatagramPacket(result.getBytes(), result.getBytes().length, InetAddress.getByName(host), portClient));
+                    sSocket.send(new DatagramPacket(result.getBytes(), result.getBytes().length, InetAddress.getByName(host), portClient));
                 }
 
             } while (packet.getLength() > 0);

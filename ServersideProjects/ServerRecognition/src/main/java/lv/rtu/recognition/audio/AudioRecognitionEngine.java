@@ -41,7 +41,7 @@ public class AudioRecognitionEngine {
                 System.getProperties().list(System.err);
             }
 
-            String strFileName = "";
+            String strFileName;
 
             for (int i = 0; i < aoFiles.length; i++) {
                 strFileName = aoFiles[i].getPath();
@@ -99,19 +99,18 @@ public class AudioRecognitionEngine {
         MARF.setSampleFile(pstrFilename);
         MARF.recognize();
 
-        String [] results = new String[2];
         // First guess
         int iIdentifiedID = MARF.queryResultID();
-        results[0] = ((User)table.select((long) iIdentifiedID)).getUserName();
+        String firstBestName = ((User)table.select((long) iIdentifiedID)).getUserName();
         // Second best
         int iSecondClosestID = MARF.getResultSet().getSecondClosestID();
-        results[1] = ((User) table.select((long) iSecondClosestID)).getUserName();
+        String secondBestName = ((User) table.select((long) iSecondClosestID)).getUserName();
 
         System.out.println("----------------------------8<------------------------------");
         System.out.println("                 File: " + pstrFilename);
         System.out.println("               Config: " + pstrConfig);
         System.out.println("         Speaker's ID: " + iIdentifiedID);
-        System.out.println("   Speaker identified: " + results[0]);
+        System.out.println("   Speaker identified: " + firstBestName);
 
 		/*
          * Only collect stats if we have expected speaker
@@ -123,11 +122,11 @@ public class AudioRecognitionEngine {
         }
 
         System.out.println("       Second Best ID: " + iSecondClosestID);
-        System.out.println("     Second Best Name: " + results[1]);
+        System.out.println("     Second Best Name: " + secondBestName);
         System.out.println("            Date/time: " + new Date());
         System.out.println("----------------------------8<------------------------------");
 
-        return results;
+        return new String[] {String.valueOf(iIdentifiedID), String.valueOf(iSecondClosestID)};
     }
 
     public synchronized void folderIdent(String filePath) {

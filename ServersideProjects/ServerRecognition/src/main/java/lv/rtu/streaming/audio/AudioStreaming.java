@@ -2,7 +2,7 @@ package lv.rtu.streaming.audio;
 
 import lv.rtu.domain.AudioUtils;
 import lv.rtu.domain.NameGenerator;
-import lv.rtu.maping.Mapping;
+import lv.rtu.maping.DataStreamMapping;
 import lv.rtu.recognition.RecognitionEngine;
 import org.xiph.speex.SpeexDecoder;
 
@@ -27,12 +27,12 @@ public class AudioStreaming implements Runnable {
     public void run() {
         try {
 
-            DatagramSocket dsocket = new DatagramSocket(portServer);
-            DatagramSocket ssocket = new DatagramSocket();
+            DatagramSocket dSocket = new DatagramSocket(portServer);
+            DatagramSocket sSocket = new DatagramSocket();
 
             byte[] buffer = new byte[1024];
 
-            DatagramPacket packet = new DatagramPacket(buffer,buffer.length);
+            DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
 
             SpeexDecoder speexDecoder = new SpeexDecoder();
             speexDecoder.init(0, 8000, 1, false);
@@ -40,7 +40,7 @@ public class AudioStreaming implements Runnable {
             ByteBuffer storeBuffer = ByteBuffer.allocate(115000);
             int arrayLength;
             do {
-                dsocket.receive(packet);
+                dSocket.receive(packet);
 
                 arrayLength = packet.getLength();
                 speexDecoder.processData(packet.getData(), 0, packet.getData().length);
@@ -52,7 +52,7 @@ public class AudioStreaming implements Runnable {
 
                 storeBuffer.put(data);
                 if (storeBuffer.position() > 114000) {
-                    String host = Mapping.getDestination(packet.getAddress().toString().substring(1));
+                    String host = DataStreamMapping.getDestination(packet.getAddress().toString().substring(1));
                     System.out.println("Client IP : " + packet.getAddress().toString());
 
                     AudioInputStream stream = AudioUtils.soundBytesToAudio(storeBuffer.array());
@@ -65,7 +65,7 @@ public class AudioStreaming implements Runnable {
 
                     String[] result = RecognitionEngine.recogniseAudio(fileName);
 
-                    ssocket.send(new DatagramPacket(result[0].getBytes(), result[0].getBytes().length,
+                    sSocket.send(new DatagramPacket(result[0].getBytes(), result[0].getBytes().length,
                             InetAddress.getByName(host), portClient));
                 }
             } while (arrayLength > 0);

@@ -62,9 +62,7 @@ public class AvailablePortFinder {
             if (ss != null) {
                 try {
                     ss.close();
-                } catch (IOException e) {
-                    /* should not be thrown */
-                }
+                } catch (IOException e) {}
             }
         }
 
@@ -92,9 +90,7 @@ public class AvailablePortFinder {
                 if (s != null) {
                     try {
                         s.close();
-                    } catch (IOException e) {
-                        /* should not be thrown */
-                    }
+                    } catch (IOException e) {}
                 }
             }
         }

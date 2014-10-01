@@ -1,15 +1,18 @@
 package lv.rtu.server.connection;
 
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 import lv.rtu.db.DataBaseFiller;
 import lv.rtu.db.DatabaseTools;
 import lv.rtu.external_camera.IPCameraThreadController;
+import lv.rtu.factories.TreadFactory;
+import lv.rtu.maping.DataStreamMapping;
 import lv.rtu.maping.IPCamMapping;
-import lv.rtu.maping.Mapping;
+import lv.rtu.modules.ServerModule;
 import lv.rtu.recognition.RecognitionEngine;
-import lv.rtu.server.connection_thread.ConnectionThread;
+import lv.rtu.server.network_util.Ping;
 
 import java.io.IOException;
-import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -20,16 +23,14 @@ public class ConnectionHandler {
     // The client socket.
     private static Socket clientSocket = null;
 
+    public static void main(String args[]) {
 
-	//This recognition server can accept up to maxClientsCount clients' connections.
-	private static final int maxClientsCount = 10;
-	private static final ConnectionThread[] threads = new ConnectionThread[maxClientsCount];
-
-	public static void main(String args[]) {
+        //Dependency injector
+        Injector injector = Guice.createInjector(new ServerModule());
 
         //Checking is database accessible or not;
-        DatabaseTools tools = new DatabaseTools();
-        if(!tools.checkIsConnectionPossible()){
+        DatabaseTools tools = injector.getInstance(DatabaseTools.class);
+        if (!tools.checkIsConnectionPossible()) {
             System.out.println("Database not found. Server requires Database data. Please check is database running" +
                     " , or database profile is correct.");
             return;
@@ -42,7 +43,7 @@ public class ConnectionHandler {
         RecognitionEngine.trainRecognizers();
 
         // Loading server-client mapping;
-        Mapping.mappingFromFile();
+        DataStreamMapping.mappingFromFile();
 
         // Loading ip camera mapping;
         IPCamMapping.mappingFromFile();
@@ -52,50 +53,41 @@ public class ConnectionHandler {
         treadController.runAllIPCameras();
 
         // The default port number.
-		int portNumber = 2222;
-		if (args.length < 1) {
-			System.out
-					.println("Usage: java MultiThreadChatServer <portNumber>\n"
-							+ "Now using port number=" + portNumber);
-		} else {
-			portNumber = Integer.valueOf(args[0]).intValue();
-		}
+        int portNumber = 2222;
+
+        if (args.length < 1) {
+            System.out
+                    .println("Usage: java MultiThreadRecognitionServer <portNumber>\n"
+                            + "Now using port number=" + portNumber);
+        } else {
+            portNumber = Integer.valueOf(args[0]).intValue();
+        }
+
+        /*
+         * Ping service
+         */
+        injector.getInstance(Ping.class).start();
 
 		/*
-		 * Open a server socket on the portNumber (default 2222). Note that we
+         * Open a server socket on the portNumber (default 2222). Note that we
 		 * can not choose a port less than 1023 if we are not privileged users (root);
 		 */
-		try {
-			serverSocket = new ServerSocket(portNumber);
-		} catch (IOException e) {
-			System.out.println(e);
-		}
+        try {
+            serverSocket = new ServerSocket(portNumber);
+        } catch (IOException e) {
+            System.out.println(e);
+        }
 
 		/*
 		 * Create a client socket for each connection and pass it to a new client thread;
 		 */
-		while (true) {
-			try {
-				clientSocket = serverSocket.accept();
-				int i = 0;
-				for (i = 0; i < maxClientsCount; i++) {
-					if (threads[i] == null) {
-						(threads[i] = new ConnectionThread(clientSocket))
-								.start();
-						break;
-					}
-				}
-				if (i == maxClientsCount) {
-					PrintStream os = new PrintStream(
-							clientSocket.getOutputStream());
-					os.println("Server too busy. Try later.");
-					os.close();
-					clientSocket.close();
-				}
-			} catch (IOException e) {
+        while (true) {
+            try {
+                clientSocket = serverSocket.accept();
+                injector.getInstance(TreadFactory.class).getTread(clientSocket).start();
+            } catch (IOException e) {
                 e.printStackTrace();
-				System.out.println(e);
-			}
-		}
-	}
+            }
+        }
+    }
 }

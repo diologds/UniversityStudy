@@ -10,10 +10,10 @@ import java.io.ObjectOutputStream;
 
 public class ProcessStream {
 
-    int clientPort;
-    int serverPort;
-
     public void processStream(ObjectFile objectFile ,ObjectOutputStream out){
+        int clientPort;
+        int serverPort;
+
         switch(objectFile.getMessage()){
             case "Video Stream":
                 clientPort = Integer.valueOf(objectFile.getData());
@@ -45,9 +45,6 @@ public class ProcessStream {
                 AudioStreaming audioStream = new AudioStreaming(serverPort, clientPort);
                 Thread audioStreamThread = new Thread(audioStream);
                 audioStreamThread.start();
-                break;
-
-            case "Combined Stream":
                 break;
         }
     }

@@ -1,13 +1,17 @@
 package lv.rtu.server.object_handler;
 
+import com.google.inject.Inject;
 import lv.rtu.domain.ObjectFile;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
-
 public class ObjectTransfer {
+
+    @Inject
+    public ObjectTransfer() {
+    }
 
     public ObjectFile receiveFile(ObjectInputStream inStream) {
 
