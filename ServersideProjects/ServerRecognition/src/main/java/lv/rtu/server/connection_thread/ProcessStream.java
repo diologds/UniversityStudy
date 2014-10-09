@@ -1,6 +1,7 @@
 package lv.rtu.server.connection_thread;
 
 import lv.rtu.domain.ObjectFile;
+import lv.rtu.enums.Commands;
 import lv.rtu.server.network_util.AvailablePortFinder;
 import lv.rtu.streaming.audio.AudioStreaming;
 import lv.rtu.streaming.video.VideoStreaming;
@@ -10,12 +11,12 @@ import java.io.ObjectOutputStream;
 
 public class ProcessStream {
 
-    public void processStream(ObjectFile objectFile ,ObjectOutputStream out){
+    public void processStream(ObjectFile objectFile, ObjectOutputStream out) {
         int clientPort;
         int serverPort;
-
-        switch(objectFile.getMessage()){
-            case "Video Stream":
+        String messageCommand = objectFile.getMessage();
+        switch (Commands.fromValue(messageCommand)) {
+            case IMAGE: {
                 clientPort = Integer.valueOf(objectFile.getData());
                 serverPort = AvailablePortFinder.getNextAvailable();
                 System.out.println("Generated port : " + serverPort);
@@ -29,9 +30,9 @@ public class ProcessStream {
                 VideoStreaming videoStream = new VideoStreaming(serverPort, clientPort);
                 Thread videoStreamThread = new Thread(videoStream);
                 videoStreamThread.start();
-                break;
+            } break;
 
-            case "Audio Stream":
+            case AUDIO: {
                 clientPort = Integer.valueOf(objectFile.getData());
                 serverPort = AvailablePortFinder.getNextAvailable();
                 System.out.println("Generated port : " + serverPort);
@@ -45,8 +46,7 @@ public class ProcessStream {
                 AudioStreaming audioStream = new AudioStreaming(serverPort, clientPort);
                 Thread audioStreamThread = new Thread(audioStream);
                 audioStreamThread.start();
-                break;
+            } break;
         }
     }
-
 }

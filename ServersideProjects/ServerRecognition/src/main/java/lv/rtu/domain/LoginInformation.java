@@ -3,15 +3,24 @@ package lv.rtu.domain;
 import java.util.Date;
 
 public class LoginInformation {
-    private User user;
+    private String token;
     private Date date;
 
-    public User getUser() {
-        return user;
+    public LoginInformation(String token){
+        this.token = token;
+        this.date = new Date();
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void updataTime(){
+        this.date = new Date();
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public Date getDate() {

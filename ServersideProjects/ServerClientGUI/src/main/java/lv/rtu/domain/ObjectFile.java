@@ -5,20 +5,54 @@ import java.util.Arrays;
 
 public class ObjectFile implements Serializable {
 
+    private String command;
     private String message;
     private String data;
     private byte[] fileBytes;
     private User user;
+    private String accessToken;
 
     public ObjectFile(String message) {
         this.message = message;
     }
 
-    public ObjectFile(String message, String data, byte[] fileBytes, User user) {
+    public ObjectFile(String command, String message, String data, byte[] fileBytes, User user) {
+        this.command = command;
         this.message = message;
         this.data = data;
         this.fileBytes = fileBytes;
         this.user = user;
+    }
+
+    public ObjectFile(String command, String message, User user , String accessToken) {
+        this.command = command;
+        this.message = message;
+        this.user = user;
+        this.accessToken = accessToken;
+    }
+
+    public ObjectFile(String message, User user) {
+        this.message = message;
+        this.user = user;
+    }
+
+    public ObjectFile(String command, String message) {
+        this.command = command;
+        this.message = message;
+    }
+
+    public ObjectFile(String command, String message, String accessToken) {
+        this.command = command;
+        this.message = message;
+        this.accessToken = accessToken;
+    }
+
+    public String getCommand() {
+        return command;
+    }
+
+    public void setCommand(String command) {
+        this.command = command;
     }
 
     public String getMessage() {
@@ -53,47 +87,51 @@ public class ObjectFile implements Serializable {
         this.user = user;
     }
 
+    public String getAccessToken() {
+        return accessToken;
+    }
+
+    public void setAccessToken(String accessToken) {
+        this.accessToken = accessToken;
+    }
+
     @Override
     public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
-        if (!(o instanceof ObjectFile))
-            return false;
+        if (this == o) return true;
+        if (!(o instanceof ObjectFile)) return false;
 
-        ObjectFile objectFile = (ObjectFile) o;
+        ObjectFile that = (ObjectFile) o;
 
-        if (message != null ? !message.equals(objectFile.getMessage())
-                : objectFile.getMessage() != null)
-            return false;
-        if (data != null ? !data.equals(objectFile.getData())
-                : objectFile.getData() != null)
-            return false;
-        if (fileBytes != null ? !Arrays.equals(fileBytes,
-                objectFile.getFileBytes()) : objectFile.getFileBytes() != null)
-            return false;
+        if (accessToken != null ? !accessToken.equals(that.accessToken) : that.accessToken != null) return false;
+        if (command != null ? !command.equals(that.command) : that.command != null) return false;
+        if (data != null ? !data.equals(that.data) : that.data != null) return false;
+        if (!Arrays.equals(fileBytes, that.fileBytes)) return false;
+        if (message != null ? !message.equals(that.message) : that.message != null) return false;
+        if (user != null ? !user.equals(that.user) : that.user != null) return false;
+
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = message != null ? message.hashCode() : 0;
+        int result = command != null ? command.hashCode() : 0;
+        result = 31 * result + (message != null ? message.hashCode() : 0);
         result = 31 * result + (data != null ? data.hashCode() : 0);
-        result = 31 * result + (fileBytes != null ? fileBytes.hashCode() : 0);
+        result = 31 * result + (fileBytes != null ? Arrays.hashCode(fileBytes) : 0);
         result = 31 * result + (user != null ? user.hashCode() : 0);
+        result = 31 * result + (accessToken != null ? accessToken.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-
-        if(user != null)
-            return "ObjectFile{ Message= " + message + '\'' + ", Data='"
-                    + data + '\'' + ", fileBytesLengths='" + fileBytes + '\''
-                    + "User : " + user.getId() + '}';
-        else
-            return "ObjectFile{ Message= " + message + '\'' + ", Data='"
-                    + data + '\'' + ", fileBytesLengths='" + fileBytes + '}';
+        return "ObjectFile{" +
+                "command='" + command + '\'' +
+                ", message='" + message + '\'' +
+                ", data='" + data + '\'' +
+                ", fileBytes=" + Arrays.toString(fileBytes) +
+                ", user=" + user +
+                ", accessToken='" + accessToken + '\'' +
+                '}';
     }
 }

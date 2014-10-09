@@ -4,8 +4,8 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.Key;
 import com.google.inject.name.Names;
-import lv.rtu.domain.LoginUtil;
-import lv.rtu.domain.ObjectFile;
+import lv.rtu.domain.*;
+import lv.rtu.enums.Commands;
 import lv.rtu.modules.ServerModule;
 import lv.rtu.server.commands.Command;
 import lv.rtu.server.object_handler.ObjectTransfer;
@@ -16,10 +16,6 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 public class ConnectionThread extends Thread {
-
-    private final String EXIT_COMMAND = "exit";
-    private final String STREAM_COMMAND = "Stream";
-    private final String LOGIN = "Login";
 
     //Accepted client socket
     private Socket clientSocket;
@@ -45,30 +41,41 @@ public class ConnectionThread extends Thread {
             inStream = new ObjectInputStream(clientSocket.getInputStream());
             outStream = new ObjectOutputStream(clientSocket.getOutputStream());
             boolean connection = true;
-            ObjectFile message = null;
             while (connection) {
                 ObjectFile objectFile = injector.getInstance(ObjectTransfer.class).receiveFile(inStream);
-                if (!objectFile.getMessage().equals(EXIT_COMMAND)) {
-                    if (objectFile.getMessage().contains(LOGIN)) {
-                        message = injector.getInstance(Key.get(Command.class, Names.named("Login"))).executeCommand(objectFile);
-                    } else if (LoginUtil.userMap.containsKey(clientSocket.getInetAddress().toString())) {
-                        if (objectFile.getMessage().contains(STREAM_COMMAND)) {
-                            injector.getInstance(ProcessStream.class).processStream(objectFile, outStream);
-                        } else {
-                            System.out.println(objectFile.toString());
-                            message = injector.getInstance(ProcessConnectionData.class).objectAnalysis(objectFile);
-                        }
-                    } else {
-                        outStream.writeObject(new ObjectFile("Please log in"));
+                String messageCommand = objectFile.getCommand();
+
+               /* if(!LoginUtil.isValid(objectFile.getAccessToken()) && !Commands.fromValue(messageCommand).equals(Commands.LOGIN)){
+                    outStream.writeObject(new ObjectFile("Please Login"));
+                    continue;
+                }*/
+
+                switch(Commands.fromValue(messageCommand)){
+                    case LOGIN:{
+                        ObjectFile message = injector.getInstance(Key.get(Command.class, Names.named("Login"))).executeCommand(objectFile);
+                        String token = AuthorizationTokenGenerator.nextToken();
+                        System.out.print(token);
+                        message.setAccessToken(token);
+                        LoginUtil.addUser(clientSocket.getInetAddress().toString(), new LoginInformation(token));
+                        outStream.writeObject(message);
+                    } break;
+                    case GENERAL:{
+                        ObjectFile message = injector.getInstance(ProcessConnectionData.class).objectAnalysis(objectFile);
+                        outStream.writeObject(message);
+                    } break;
+                    case STREAM:{
+                        injector.getInstance(ProcessStream.class).processStream(objectFile, outStream);
+                        outStream.writeObject("Streaming thread started");
+                    } break;
+                    case EXIT:{
+                        connection = false;
+                        inStream.close();
+                        outStream.close();
+                        System.out.println("Connection closed for IP : " + clientSocket.getInetAddress());
+                    } break;
+                    default:{
+                        outStream.writeObject("Unknown command");
                     }
-
-                    outStream.writeObject(message);
-
-                } else {
-                    connection = false;
-                    inStream.close();
-                    outStream.close();
-                    System.out.println("Connection closed for IP : " + clientSocket.getInetAddress());
                 }
             }
         } catch (IOException e) {

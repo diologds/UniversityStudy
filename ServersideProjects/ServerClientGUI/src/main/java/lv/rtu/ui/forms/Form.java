@@ -7,6 +7,8 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBoxBuilder;
 import javafx.scene.text.Text;
@@ -22,26 +24,28 @@ import java.util.TimerTask;
 
 public class Form {
 
-    int FORM_SIZE_X = 500;
-    int FORM_SIZE_Y = 500;
-    int UI_BUTTON_SIZE = 100;
-    int CONTROL_BUTTON_SIZE = 20;
+    protected int FORM_SIZE_X = 500;
+    protected int FORM_SIZE_Y = 500;
+    protected int UI_BUTTON_SIZE = 100;
+    protected int CONTROL_BUTTON_SIZE = 20;
 
-    int ELEMENT_GAP = 10;
-    int PADDING = 25;
-    int FONT_SIZE_TITLE = 25;
-    int FONT_SIZE_TEXT = 13;
+    protected int ELEMENT_GAP = 10;
+    protected int PADDING = 25;
+    protected int FONT_SIZE_TITLE = 25;
+    protected int FONT_SIZE_TEXT = 16;
 
     @Inject
     public Ping ping;
     @Inject
     public User user;
 
-    Pane root;
-    Stage stage;
+    protected Pane root;
+    protected Stage stage;
 
-    String FONT = "Tahoma";
-    String BACKGROUND_IMAGE = "-fx-background-image: url('/background.jpg'); -fx-background-repeat: stretch; -fx-background-size: 500 500; ";
+    protected String FONT = "Tahoma";
+    protected String BACKGROUND_IMAGE = "-fx-background-image: url('/background.jpg'); -fx-background-repeat: stretch; -fx-background-size: 500 500; ";
+
+    protected static String accessToken;
 
     public Form() {
         root = new Pane();
@@ -89,5 +93,17 @@ public class Form {
                 children(new Text(message),closeDialogWindow).
                 alignment(Pos.CENTER).padding(new Insets(5)).build()));
         dialogStage.show();
+    }
+
+    public void addTooltip(ImageButton button, String message) {
+        Tooltip tooltip = new Tooltip();
+        tooltip.setText(message);
+        button.setTooltip(tooltip);
+    }
+
+    public void addTooltip(TextField field, String message) {
+        Tooltip tooltip = new Tooltip();
+        tooltip.setText(message);
+        field.setTooltip(tooltip);
     }
 }

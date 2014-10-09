@@ -2,10 +2,8 @@ package lv.rtu.server.commands;
 
 import com.google.inject.Inject;
 import lv.rtu.db.UserTableImplementationDAO;
-import lv.rtu.domain.AudioUtils;
-import lv.rtu.domain.NameGenerator;
-import lv.rtu.domain.ObjectFile;
-import lv.rtu.domain.User;
+import lv.rtu.domain.*;
+import lv.rtu.enums.Commands;
 import lv.rtu.recognition.RecognitionEngine;
 
 import javax.imageio.ImageIO;
@@ -23,8 +21,10 @@ public class Login implements Command {
 
     @Override
     public ObjectFile executeCommand(ObjectFile objectFile) {
+        String messageCommand = objectFile.getMessage();
         Long userNumber = null;
-        if (objectFile.getMessage().contains("Image")) {
+
+        if (Commands.fromValue(messageCommand).equals(Commands.IMAGE)) {
             BufferedImage image = null;
             try {
                 image = ImageIO.read(new ByteArrayInputStream(objectFile.getFileBytes()));
@@ -39,7 +39,7 @@ public class Login implements Command {
             }
         }
 
-        if (objectFile.getMessage().contains("Audio")) {
+        if (Commands.fromValue(messageCommand).equals(Commands.AUDIO)) {
             try {
                 AudioInputStream stream = AudioUtils.soundBytesToAudio(objectFile.getFileBytes());
                 String fileName = "./resources/tmp/" + NameGenerator.getName() + ".wav";
@@ -51,10 +51,10 @@ public class Login implements Command {
                 e.printStackTrace();
             }
         }
+
         User user = dao.select(userNumber);
-        System.out.println(user);
         if (objectFile.getUser().getId().equals(userNumber))
-            return new ObjectFile("Login successful", null, null, user);
+            return new ObjectFile("Login successful", user);
         else
             return new ObjectFile("Login failed");
     }

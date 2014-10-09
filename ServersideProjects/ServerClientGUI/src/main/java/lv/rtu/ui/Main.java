@@ -6,7 +6,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import lv.rtu.modules.ClientModule;
 import lv.rtu.network_utils.Ping;
-import lv.rtu.ui.forms.LoginForm;
+import lv.rtu.ui.forms.authorization.LoginForm;
 
 public class Main extends Application {
 
