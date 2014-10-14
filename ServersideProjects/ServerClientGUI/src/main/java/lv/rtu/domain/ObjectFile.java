@@ -6,27 +6,38 @@ import java.util.Arrays;
 public class ObjectFile implements Serializable {
 
     private String command;
+    private String subCommand;
     private String message;
     private String data;
     private byte[] fileBytes;
     private User user;
     private String accessToken;
 
-    public ObjectFile(String message) {
+    public ObjectFile(String command) {
         this.message = message;
     }
 
-    public ObjectFile(String command, String message, String data, byte[] fileBytes, User user) {
+    public ObjectFile(String command, String subCommand, String message, String data, byte[] fileBytes, String accessToken, User user) {
         this.command = command;
+        this.subCommand = subCommand;
         this.message = message;
         this.data = data;
         this.fileBytes = fileBytes;
+        this.accessToken = accessToken;
         this.user = user;
     }
 
-    public ObjectFile(String command, String message, User user , String accessToken) {
+    public ObjectFile(String command,String subCommand, String message, User user , String accessToken) {
         this.command = command;
+        this.subCommand = subCommand;
         this.message = message;
+        this.user = user;
+        this.accessToken = accessToken;
+    }
+
+    public ObjectFile(String command,String subCommand, User user , String accessToken) {
+        this.command = command;
+        this.subCommand = subCommand;
         this.user = user;
         this.accessToken = accessToken;
     }
@@ -36,14 +47,14 @@ public class ObjectFile implements Serializable {
         this.user = user;
     }
 
-    public ObjectFile(String command, String message) {
+    public ObjectFile(String command, String subCommand) {
         this.command = command;
-        this.message = message;
+        this.subCommand = subCommand;
     }
 
-    public ObjectFile(String command, String message, String accessToken) {
+    public ObjectFile(String command, String subCommand, String accessToken) {
         this.command = command;
-        this.message = message;
+        this.subCommand = subCommand;
         this.accessToken = accessToken;
     }
 
@@ -95,6 +106,14 @@ public class ObjectFile implements Serializable {
         this.accessToken = accessToken;
     }
 
+    public String getSubCommand() {
+        return subCommand;
+    }
+
+    public void setSubCommand(String subCommand) {
+        this.subCommand = subCommand;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -107,6 +126,7 @@ public class ObjectFile implements Serializable {
         if (data != null ? !data.equals(that.data) : that.data != null) return false;
         if (!Arrays.equals(fileBytes, that.fileBytes)) return false;
         if (message != null ? !message.equals(that.message) : that.message != null) return false;
+        if (subCommand != null ? !subCommand.equals(that.subCommand) : that.subCommand != null) return false;
         if (user != null ? !user.equals(that.user) : that.user != null) return false;
 
         return true;
@@ -115,6 +135,7 @@ public class ObjectFile implements Serializable {
     @Override
     public int hashCode() {
         int result = command != null ? command.hashCode() : 0;
+        result = 31 * result + (subCommand != null ? subCommand.hashCode() : 0);
         result = 31 * result + (message != null ? message.hashCode() : 0);
         result = 31 * result + (data != null ? data.hashCode() : 0);
         result = 31 * result + (fileBytes != null ? Arrays.hashCode(fileBytes) : 0);
@@ -127,6 +148,7 @@ public class ObjectFile implements Serializable {
     public String toString() {
         return "ObjectFile{" +
                 "command='" + command + '\'' +
+                ", subCommand='" + subCommand + '\'' +
                 ", message='" + message + '\'' +
                 ", data='" + data + '\'' +
                 ", fileBytes=" + Arrays.toString(fileBytes) +

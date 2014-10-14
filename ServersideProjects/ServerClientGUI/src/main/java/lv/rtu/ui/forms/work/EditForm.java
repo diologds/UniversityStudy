@@ -10,7 +10,12 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import lv.rtu.connection.sender.Connector;
+import lv.rtu.domain.ObjectFile;
+import lv.rtu.domain.User;
 import lv.rtu.ui.ui_elements.ImageButton;
+
+import java.io.IOException;
+import java.util.regex.Pattern;
 
 public class EditForm extends WorkForm {
 
@@ -50,7 +55,20 @@ public class EditForm extends WorkForm {
         audioFiles = new TextField("");
 
         sendButton = new ImageButton("/send.png", UI_BUTTON_SIZE, UI_BUTTON_SIZE);
-
+        sendButton.setOnAction((e) -> {
+            if (Pattern.matches("[0-9]+", userId.getText()) && !userName.getText().isEmpty() && !userSurname.getText().isEmpty()) {
+                User updatedUser = new User(Long.parseLong(userId.getText()), userName.getText(),
+                        userSurname.getText(), userPrivileges.getValue().toString(), audioFiles.getText(), imageFiles.getText());
+                try {
+                    connector.send(new ObjectFile("general", "Update User", updatedUser, accessToken));
+                    createDialogWindow(connector.recive().getMessage());
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                } catch (ClassNotFoundException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
         setUserElementCoordinates();
     }
 

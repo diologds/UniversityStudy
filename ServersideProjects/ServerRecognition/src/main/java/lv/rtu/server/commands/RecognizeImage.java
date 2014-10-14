@@ -18,7 +18,7 @@ public class RecognizeImage implements Command{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("***" + RecognitionEngine.recogniseImage(image));
+        System.out.println(RecognitionEngine.recogniseImage(image));
         return new ObjectFile("Recognized");
     }
 }

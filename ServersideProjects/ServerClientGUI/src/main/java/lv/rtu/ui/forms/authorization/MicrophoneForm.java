@@ -25,12 +25,7 @@ public class MicrophoneForm extends Form {
         sendButton.setOnAction((e) -> {
             if (ping.getServerStatus()) {
                 try {
-                    connector.setConnection();
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
-                try {
-                    connector.send(new ObjectFile(Commands.LOGIN.getValue(),Commands.AUDIO.getValue(), null, new AudioFileHandler().getRecognitionVoice("temp.wav"), user));
+                    connector.send(new ObjectFile(Commands.LOGIN.getValue(),Commands.AUDIO.getValue(), null, null, new AudioFileHandler().getRecognitionVoice("temp.wav"), accessToken, user));
                     ObjectFile receivedObject = connector.recive();
                     createDialogWindow(receivedObject.getMessage());
                     accessToken = receivedObject.getAccessToken();

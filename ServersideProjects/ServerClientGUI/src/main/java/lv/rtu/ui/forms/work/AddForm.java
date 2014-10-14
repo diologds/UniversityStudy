@@ -57,11 +57,10 @@ public class AddForm extends WorkForm {
         sendButton.setOnAction((e) -> {
             if (Pattern.matches("[0-9]+", userId.getText()) && !userName.getText().isEmpty() && !userSurname.getText().isEmpty()) {
                 User createdUser = new User(Long.parseLong(userId.getText()), userName.getText(),
-                        userSurname.getText(), userPrivileges.getValue().toString(),audioFiles.getText(),imageFiles.getText());
+                        userSurname.getText(), userPrivileges.getValue().toString(), audioFiles.getText(), imageFiles.getText());
                 try {
-                    connector.setConnection();
-                    connector.send(new ObjectFile("general","Add User",createdUser, accessToken));
-                    connector.recive();
+                    connector.send(new ObjectFile("general", "Add User", createdUser, accessToken));
+                    createDialogWindow(connector.recive().getMessage());
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 } catch (ClassNotFoundException e1) {
@@ -95,34 +94,34 @@ public class AddForm extends WorkForm {
     public void setUserElementCoordinates() {
 
         userIdLabel.setLayoutX(95);
-        userIdLabel.setLayoutY(145);
+        userIdLabel.setLayoutY(120);
         userIdLabel.setFont(Font.font(FONT, FontWeight.NORMAL, FONT_SIZE_TEXT));
         userId.setLayoutX(200);
-        userId.setLayoutY(125);
+        userId.setLayoutY(100);
 
         userNameLabel.setLayoutX(95);
-        userNameLabel.setLayoutY(170);
+        userNameLabel.setLayoutY(150);
         userNameLabel.setFont(Font.font(FONT, FontWeight.NORMAL, FONT_SIZE_TEXT));
         userName.setLayoutX(200);
-        userName.setLayoutY(150);
+        userName.setLayoutY(130);
 
         userSurnameLabel.setLayoutX(95);
-        userSurnameLabel.setLayoutY(195);
+        userSurnameLabel.setLayoutY(180);
         userSurnameLabel.setFont(Font.font(FONT, FontWeight.NORMAL, FONT_SIZE_TEXT));
         userSurname.setLayoutX(200);
-        userSurname.setLayoutY(175);
+        userSurname.setLayoutY(160);
 
         userPrivilegesLabel.setLayoutX(95);
-        userPrivilegesLabel.setLayoutY(220);
+        userPrivilegesLabel.setLayoutY(210);
         userPrivilegesLabel.setFont(Font.font(FONT, FontWeight.NORMAL, FONT_SIZE_TEXT));
         userPrivileges.setLayoutX(200);
-        userPrivileges.setLayoutY(200);
+        userPrivileges.setLayoutY(190);
 
         imageFilesLabel.setLayoutX(95);
-        imageFilesLabel.setLayoutY(245);
+        imageFilesLabel.setLayoutY(240);
         imageFilesLabel.setFont(Font.font(FONT, FontWeight.NORMAL, FONT_SIZE_TEXT));
         imageFiles.setLayoutX(200);
-        imageFiles.setLayoutY(225);
+        imageFiles.setLayoutY(220);
 
         audioFilesLabel.setLayoutX(95);
         audioFilesLabel.setLayoutY(270);

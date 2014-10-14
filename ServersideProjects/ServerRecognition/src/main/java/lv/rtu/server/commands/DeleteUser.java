@@ -11,7 +11,13 @@ public class DeleteUser implements Command {
 
     @Override
     public ObjectFile executeCommand(ObjectFile objectFile) {
-        dao.delete(objectFile.getUser().getId());
+        if(objectFile.getUser().getId() != null){
+            dao.delete(objectFile.getUser().getId());
+        } else if (objectFile.getUser().getUserName() != null && objectFile.getUser().getUserSurname() != null){
+            dao.deleteWithName(objectFile.getUser().getUserName(),objectFile.getUser().getUserSurname());
+        } else {
+            return new ObjectFile("Incorrect data provided");
+        }
         return new ObjectFile("User deleted");
     }
 }

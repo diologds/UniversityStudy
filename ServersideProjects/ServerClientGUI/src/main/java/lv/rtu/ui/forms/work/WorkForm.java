@@ -73,6 +73,16 @@ public class WorkForm extends Form {
             }
         });
         test = new ImageButton("/test.png", MENU_BUTTON_SIZE, MENU_BUTTON_SIZE);
+        test.setOnAction((e) -> {
+            try {
+                connector.send(new ObjectFile(Commands.GENERAL.getValue(), "Test", accessToken));
+                createDialogWindow(connector.recive().getMessage());
+            } catch (ClassNotFoundException e1) {
+                e1.printStackTrace();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        });
         setButtonStyle();
         addGuiElementsToForm();
     }

@@ -15,10 +15,14 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import lv.rtu.connection.sender.Connector;
+import lv.rtu.domain.ObjectFile;
 import lv.rtu.domain.User;
+import lv.rtu.enums.Commands;
 import lv.rtu.network_utils.Ping;
 import lv.rtu.ui.ui_elements.ImageButton;
 
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -34,6 +38,8 @@ public class Form {
     protected int FONT_SIZE_TITLE = 25;
     protected int FONT_SIZE_TEXT = 16;
 
+    @Inject
+    public Connector connector;
     @Inject
     public Ping ping;
     @Inject
@@ -61,6 +67,11 @@ public class Form {
         pingLabel.setLayoutY(480);
 
         closeButton.setOnAction((e) -> {
+            try {
+                connector.send(new ObjectFile(Commands.EXIT.getValue(), null, user, accessToken));
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
             stage.close();
             System.exit(0);
         });
@@ -69,7 +80,7 @@ public class Form {
             public void run() {
                 Platform.runLater(new Runnable() {
                     public void run() {
-                        pingLabel.setText(ping.getServerStatus() ?  "Online" : "Offline");
+                        pingLabel.setText(ping.getServerStatus() ? "Online" : "Offline");
                     }
                 });
             }
@@ -81,7 +92,7 @@ public class Form {
         stage.initStyle(StageStyle.UNDECORATED);
     }
 
-    public void createDialogWindow(String message){
+    public void createDialogWindow(String message) {
         Stage dialogStage = new Stage();
         dialogStage.initStyle(StageStyle.UNDECORATED);
         dialogStage.initModality(Modality.WINDOW_MODAL);
@@ -90,7 +101,7 @@ public class Form {
             dialogStage.close();
         });
         dialogStage.setScene(new Scene(VBoxBuilder.create().
-                children(new Text(message),closeDialogWindow).
+                children(new Text(message), closeDialogWindow).
                 alignment(Pos.CENTER).padding(new Insets(5)).build()));
         dialogStage.show();
     }
@@ -105,5 +116,13 @@ public class Form {
         Tooltip tooltip = new Tooltip();
         tooltip.setText(message);
         field.setTooltip(tooltip);
+    }
+
+    public void establishConnection() {
+        try {
+            connector.setConnection();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
     }
 }

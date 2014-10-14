@@ -4,20 +4,20 @@
     <list default="true" id="1d409c29-20dd-454d-a81b-3b4f2d33df43" name="Default" comment="" />
     <ignored path="RecognitionServer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412885005100" ignored="false" />
+    <file path="/Dummy.txt" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413226957707" ignored="false" />
     <file path="/VideoStreaming.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1398804854993" ignored="false" />
     <file path="/TempVideo.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1392509366770" ignored="false" />
     <file path="/pom.xml" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1392511201698" ignored="false" />
     <file path="/VideoRecognitionEngine.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394409533011" ignored="false" />
     <file path="/a.dummy" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395085955835" ignored="false" />
     <file path="/ImageUtil.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1392752222875" ignored="false" />
-    <file path="/ConnectionThread.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412528637571" ignored="false" />
-    <file path="/ObjectFile.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412885025629" ignored="false" />
-    <file path="/ProcessConnectionData.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411419052092" ignored="false" />
-    <file path="/FileTransfer.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411415549972" ignored="false" />
-    <file path="/fragment.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412710929911" ignored="false" />
-    <file path="/UserInterfaceDAO.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393069461260" ignored="false" />
-    <file path="/UserTableImplementationDAO.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393084793275" ignored="false" />
+    <file path="/ConnectionThread.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413318996848" ignored="false" />
+    <file path="/ObjectFile.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316514777" ignored="false" />
+    <file path="/ProcessConnectionData.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413321004982" ignored="false" />
+    <file path="/FileTransfer.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413314666892" ignored="false" />
+    <file path="/fragment.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413320905806" ignored="false" />
+    <file path="/UserInterfaceDAO.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413140883038" ignored="false" />
+    <file path="/UserTableImplementationDAO.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413311898025" ignored="false" />
     <file path="/UserTest.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393069972144" ignored="false" />
     <file path="/AudioRecognitionEngine.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395964458492" ignored="false" />
     <file path="/DataBaseFiller.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393100662673" ignored="false" />
@@ -91,7 +91,7 @@
     <file path="/AudioRecognitionTest.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395963329625" ignored="false" />
     <file path="/Command.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1398806611107" ignored="false" />
     <file path="/AddUser.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411415214629" ignored="false" />
-    <file path="/DeleteUser.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411415395030" ignored="false" />
+    <file path="/DeleteUser.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413145817396" ignored="false" />
     <file path="/FillDB.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411417226543" ignored="false" />
     <file path="/SetIPCameraMapping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411417337497" ignored="false" />
     <file path="/SetMapping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1398982396433" ignored="false" />
@@ -107,11 +107,11 @@
     <file path="/ConnectionModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1409851271577" ignored="false" />
     <file path="/TreadFactory.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1409600433556" ignored="false" />
     <file path="/Ping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410292336065" ignored="false" />
-    <file path="/ServerModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410979308212" ignored="false" />
+    <file path="/ServerModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413320971718" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/NetworkUtils/Ping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410292341408" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/Main.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410294693015" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/forms/Form.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410295536209" ignored="false" />
-    <file path="/Form.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412529983129" ignored="false" />
+    <file path="/Form.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413319258214" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/pom.xml" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412103725547" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/models/ClientModel.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410292686204" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/modules/ClientModel.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410292789852" ignored="false" />
@@ -119,9 +119,9 @@
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/modules/ClientModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410294073400" ignored="false" />
     <file path="/ClientModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714562758" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/forms/LoginForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410294740341" ignored="false" />
-    <file path="/LoginForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412717206493" ignored="false" />
+    <file path="/LoginForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316056802" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/forms/CameraForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467327323" ignored="false" />
-    <file path="/CameraForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412703323699" ignored="false" />
+    <file path="/CameraForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413238598576" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/connection/sender/Connector.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410383712335" ignored="false" />
     <file path="/Connector.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410383700166" ignored="false" />
     <file path="/RecognizeImage.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411417171027" ignored="false" />
@@ -132,13 +132,13 @@
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/CameraForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714551282" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/User.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411577101806" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/modules/ClientModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
-    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/Form.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412786051902" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/Form.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413319259792" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/hs_err_pid5404.log" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/LoginForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412717380415" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/connection/sender/Connector.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/ui_elements/ImageButton.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/NetworkUtils/Ping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
-    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/ObjectFile.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412886586814" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/ObjectFile.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413317200503" ignored="false" />
     <file path="/Login.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412516777614" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/modules/ClientModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714566431" ignored="false" />
     <file path="/RecognizeAudio.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411416923727" ignored="false" />
@@ -146,7 +146,7 @@
     <file path="/User.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411577088952" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/MicrophoneForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412525625933" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/AudioUtils.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411909869135" ignored="false" />
-    <file path="/MicrophoneForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412525624428" ignored="false" />
+    <file path="/MicrophoneForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413238604574" ignored="false" />
     <file path="$PROJECT_DIR$/../AudioRecognition/src/com/authentificator/application/audio/sound_handler/AudioStreamHandler.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411914967217" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/AudioRecorder.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411927510602" ignored="false" />
     <file path="/AudioRecorder.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411927508822" ignored="false" />
@@ -164,11 +164,22 @@
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/AddUserForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714210864" ignored="false" />
     <file path="/AddUserForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714168314" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/RemoveForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412791022358" ignored="false" />
-    <file path="/RemoveForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412890511350" ignored="false" />
+    <file path="/RemoveForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413146439047" ignored="false" />
     <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/AddForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412791039101" ignored="false" />
     <file path="/AddForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412888175648" ignored="false" />
-    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/AddForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412889482672" ignored="false" />
-    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/RemoveForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412890521449" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/AddForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316106296" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/RemoveForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316132052" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/EditForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316121584" ignored="false" />
+    <file path="/EditForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413137981204" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/ImageForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316127549" ignored="false" />
+    <file path="/ImageForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413307568969" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/AudioForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316111642" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/authorization/CameraForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316031115" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/authorization/MicrophoneForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316101087" ignored="false" />
+    <file path="/AudioForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413239173011" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/authorization/LoginForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413317085444" ignored="false" />
+    <file path="/Test.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413322939747" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/WorkForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413323015131" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +195,6 @@
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -221,6 +231,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -230,64 +241,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ConnectionThread.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ConnectionThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="28" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="63" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Command.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Command.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="17" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Commands.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/enums/Commands.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="68" selection-start="107" selection-end="114" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddUser.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/AddUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="0.48445597">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProcessConnectionData.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ProcessConnectionData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="35" selection-start="1144" selection-end="1152" vertical-scroll-proportion="0.0">
+            <state line="35" column="40" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/domain/AudioUtils.java">
+      <file leaf-file-name="Train.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Train.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+            <state line="4" column="30" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="103" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecognizeAudio.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/RecognizeAudio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="31" selection-start="698" selection-end="730" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioRecognitionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/test/java/audio_recognition_test/AudioRecognitionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="25" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoRecognitionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/test/java/video_recognition_test/VideoRecognitionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="25" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/test/java/db_tests/UserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="-3.3312101">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioRecognitionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/audio_recognition_test/AudioRecognitionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="13" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -296,25 +318,18 @@
       <file leaf-file-name="ObjectFile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/domain/ObjectFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="25" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="15" column="39" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Login.java">
+      <file leaf-file-name="ServerModule.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/modules/ServerModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="27" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserTableImplementationDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/db/UserTableImplementationDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="48" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+            <state line="60" column="69" selection-start="2201" selection-end="2201" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -338,22 +353,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/FillDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/SetDataStreamMapping.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/SetIPCameraMapping.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Train.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/UpdateUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ProcessConnectionData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/enums/Commands.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/domain/AuthorizationTokenGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/domain/LoginInformation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/domain/StringUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ProcessStream.java" />
         <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/lv/rtu/domain/LoginUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ConnectionThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/lv/rtu/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/db/UserInterfaceDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/DeleteUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/RecognizeImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/db/UserTableImplementationDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/FileTransfer.java" />
         <option value="$PROJECT_DIR$/src/main/java/lv/rtu/domain/ObjectFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ConnectionThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/modules/ServerModule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ProcessConnectionData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/audio_recognition_test/AudioRecognitionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/test/java/audio_recognition_test/AudioRecognitionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/test/java/video_recognition_test/VideoRecognitionTest.java" />
       </list>
     </option>
   </component>
@@ -400,16 +415,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ServerRecognition" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Problems">
           <PATH>
@@ -519,6 +524,150 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video_recognition_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db_tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio_recognition_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -846,6 +995,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -882,10 +1061,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -917,11 +1106,11 @@
       <recent name="lv.rtu.recognition.audio" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu" />
       <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu\domain" />
       <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu\recognition\audio" />
       <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu\local_file_handler" />
       <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu\video" />
-      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu\audio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java" />
@@ -955,68 +1144,6 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="db_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="IdeaProjects" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="db_tests" />
-      <option name="MAIN_CLASS_NAME" value="db_tests.UserTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="VideoRecognitionTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="video_recognition_test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="IdeaProjects" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="video_recognition_test" />
-      <option name="MAIN_CLASS_NAME" value="video_recognition_test.VideoRecognitionTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1066,6 +1193,51 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="IdeaProjects" />
       <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserTableImplementationDAO" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="lv.rtu.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="lv.rtu.db.UserTableImplementationDAO" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IdeaProjects" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in IdeaProjects" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="IdeaProjects" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -1197,18 +1369,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ConnectionHandler" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VideoRecognitionTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AudioRecognitionTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LoginUtil" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AudioRecognitionTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.LoginUtil" />
+      <item index="3" class="java.lang.String" itemvalue="Application.UserTableImplementationDAO" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in IdeaProjects" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.ConnectionHandler" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LoginUtil" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AudioRecognitionTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VideoRecognitionTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in IdeaProjects" />
+        <item index="2" class="java.lang.String" itemvalue="Application.UserTableImplementationDAO" />
+        <item index="3" class="java.lang.String" itemvalue="Application.LoginUtil" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AudioRecognitionTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1268,8 +1440,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14795919" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1279,7 +1451,7 @@
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4675768" sideWeight="0.82878786" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26109216" sideWeight="0.2159091" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38395905" sideWeight="0.2159091" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25454545" sideWeight="0.21331058" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1290,8 +1462,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25454545" sideWeight="0.7389079" order="0" side_tool="false" content_ui="combo" x="462" y="167" width="441" height="393" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26109216" sideWeight="0.78409094" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25454545" sideWeight="0.61604095" order="0" side_tool="false" content_ui="combo" x="462" y="167" width="441" height="393" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38395905" sideWeight="0.78409094" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1410,114 +1582,120 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/network_util/Ping.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/FileTransfer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="80" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+        <state line="22" column="89" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/video_recognition_test/VideoRecognitionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ProcessStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="68" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/domain/LoginUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/DeleteUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/UpdateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/FileTransfer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/domain/AudioUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+        <state line="11" column="13" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/enums/Commands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="68" selection-start="107" selection-end="114" vertical-scroll-proportion="0.0">
+        <state line="3" column="30" selection-start="72" selection-end="76" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ProcessConnectionData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/object_handler/ObjectTransfer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="1144" selection-end="1152" vertical-scroll-proportion="0.0">
+        <state line="20" column="0" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ConnectionThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="28" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.0">
+        <state line="53" column="52" selection-start="1912" selection-end="1912" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Login.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Train.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="27" selection-start="2103" selection-end="2103" vertical-scroll-proportion="0.0">
+        <state line="4" column="30" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/domain/ObjectFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="25" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
+        <state line="15" column="39" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/modules/ServerModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="69" selection-start="2201" selection-end="2201" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/db/UserTableImplementationDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ProcessConnectionData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="48" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+        <state line="35" column="40" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/domain/User.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/audio_recognition_test/AudioRecognitionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="63" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.0">
+        <state line="43" column="13" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Command.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+        <state line="9" column="103" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/RecognizeAudio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="698" selection-end="730" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/commands/AddUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/test/java/audio_recognition_test/AudioRecognitionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="39" selection-start="352" selection-end="352" vertical-scroll-proportion="0.48445597">
+        <state line="18" column="25" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/test/java/video_recognition_test/VideoRecognitionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/test/java/db_tests/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="-3.3312101">
           <folding />
         </state>
       </provider>
@@ -1551,6 +1729,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>

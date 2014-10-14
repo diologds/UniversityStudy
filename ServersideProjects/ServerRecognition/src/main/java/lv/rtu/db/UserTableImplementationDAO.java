@@ -2,7 +2,10 @@ package lv.rtu.db;
 
 import lv.rtu.domain.User;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class UserTableImplementationDAO  extends DBConnector implements UserInterfaceDAO {
 
@@ -131,5 +134,20 @@ public class UserTableImplementationDAO  extends DBConnector implements UserInte
         return this;
     }
 
-
+    @Override
+    public UserTableImplementationDAO deleteWithName(String name, String surname) {
+        Connection connection = connection();
+        PreparedStatement statement;
+        try {
+            statement = connection.prepareStatement("DELETE FROM USER_TABLE WHERE USER_NAME = ? AND USER_SURNAME = ?");
+            statement.setString(1, name);
+            statement.setString(2, surname);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            close(connection);
+        }
+        return this;
+    }
 }

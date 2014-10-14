@@ -21,21 +21,23 @@ public class ProcessConnectionData {
                                  @Named("FileTransfer") Command fileTransfer,
                                  @Named("FillDB") Command fillDB,
                                  @Named("Train") Command train,
-                                 @Named("RecognizeImage") Command recognizeImage) {
+                                 @Named("RecognizeImage") Command recognizeImage,
+                                 @Named("Test") Command test) {
 
-        menuOptionMap.put("Transfer File",fileTransfer );
-        menuOptionMap.put("Add User",addUser );
-        menuOptionMap.put("Update User", updateUser );
-        menuOptionMap.put("Delete User",deleteUser );
-        menuOptionMap.put("Set Data Stream Mapping", setDataStreamMapping );
-        menuOptionMap.put("Set IP Camera Mapping", setIPCameraMapping );
+        menuOptionMap.put("Transfer File", fileTransfer);
+        menuOptionMap.put("Add User", addUser);
+        menuOptionMap.put("Update User", updateUser);
+        menuOptionMap.put("Delete User", deleteUser);
+        menuOptionMap.put("Set Data Stream Mapping", setDataStreamMapping);
+        menuOptionMap.put("Set IP Camera Mapping", setIPCameraMapping);
         menuOptionMap.put("Fill DB", fillDB);
-        menuOptionMap.put("Train",train );
-        menuOptionMap.put("Recognize Image",recognizeImage);
+        menuOptionMap.put("Train", train);
+        menuOptionMap.put("Recognize Image", recognizeImage);
+        menuOptionMap.put("Test", test);
     }
 
     public ObjectFile objectAnalysis(ObjectFile objectFile) {
-        return menuOptionMap.get(objectFile.getMessage()).executeCommand(objectFile);
+        return menuOptionMap.get(objectFile.getSubCommand()).executeCommand(objectFile);
     }
 
 }

@@ -47,17 +47,12 @@ public class CameraForm extends Form {
         ImageButton sendButton = new ImageButton("/camera.png", UI_BUTTON_SIZE, UI_BUTTON_SIZE);
         sendButton.setOnAction((e) -> {
             if (ping.getServerStatus()) {
-                try {
-                    connector.setConnection();
-                } catch (IOException e1) {
-                    e1.printStackTrace();
-                }
                 BufferedImage img = webcam.getImage();
                 ByteArrayOutputStream baStream = new ByteArrayOutputStream();
                 BufferedOutputStream bos = new BufferedOutputStream(baStream);
                 try {
                     ImageIO.write(img, "jpg", bos);
-                    connector.send(new ObjectFile(Commands.LOGIN.getValue(),Commands.IMAGE.getValue(), null, baStream.toByteArray(), user));
+                    connector.send(new ObjectFile(Commands.LOGIN.getValue(),Commands.IMAGE.getValue(), null, null, baStream.toByteArray(), accessToken , user));
                     ObjectFile receivedObject = connector.recive();
                     createDialogWindow(receivedObject.getMessage());
                     System.out.println(receivedObject.getAccessToken());

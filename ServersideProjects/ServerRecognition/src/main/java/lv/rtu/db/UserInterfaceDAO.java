@@ -9,4 +9,5 @@ interface UserInterfaceDAO {
     public Object findUserByAudioFileName(String string);
     public Object update(User user);
     public Object delete(Long id);
+    public Object deleteWithName(String name , String surname);
 }

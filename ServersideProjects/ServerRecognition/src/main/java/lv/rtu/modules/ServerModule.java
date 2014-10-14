@@ -55,5 +55,8 @@ public class ServerModule extends AbstractModule {
         bind(Command.class)
                 .annotatedWith(Names.named("Login"))
                 .to(Login.class);
+        bind(Command.class)
+                .annotatedWith(Names.named("Test"))
+                .to(Test.class);
     }
 }

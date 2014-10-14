@@ -69,6 +69,8 @@ public class LoginForm extends Form {
         root.getChildren().add(cameraButton);
         root.getChildren().add(microphoneButton);
 
+        establishConnection();
+
         microphoneButton.setOnAction((e) -> {
             if (StringUtils.isNumeric(userTextField.getText())) {
                 stage.hide();
@@ -93,4 +95,5 @@ public class LoginForm extends Form {
         stage.setScene(new Scene(root, FORM_SIZE_X, FORM_SIZE_Y));
         stage.show();
     }
+
 }

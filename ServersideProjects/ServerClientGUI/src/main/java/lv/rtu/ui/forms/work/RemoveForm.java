@@ -42,18 +42,23 @@ public class RemoveForm extends WorkForm {
 
         sendButton = new ImageButton("/send.png", UI_BUTTON_SIZE, UI_BUTTON_SIZE);
         sendButton.setOnAction((e) -> {
-            if (Pattern.matches("[0-9]+", userId.getText())) {
-                User createdUser = new User(Long.parseLong(userId.getText()), userName.getText(), userSurname.getText(), null,null,null);
+            User removeUser = null;
+            if (Pattern.matches("[0-9]+", userId.getText()) && userName.getText().isEmpty() && userSurname.getText().isEmpty()) {
+                removeUser = new User(Long.parseLong(userId.getText()), null, null, null, null, null);
+            } else if (!userName.getText().isEmpty() && !userSurname.getText().isEmpty() &&  userId.getText().isEmpty()) {
+                removeUser = new User(null, userName.getText(), userSurname.getText(), null, null, null);
+            } else {
+                createDialogWindow("Incorrect data provided");
+                return;
+            }
                 try {
-                    connector.setConnection();
-                    connector.send(new ObjectFile("general","Add User",createdUser, accessToken));
-                    connector.recive();
+                    connector.send(new ObjectFile("general", "Delete User", removeUser, accessToken));
+                    createDialogWindow(connector.recive().getMessage());
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 } catch (ClassNotFoundException e1) {
                     e1.printStackTrace();
                 }
-            }
         });
         setUserElementCoordinates();
     }
