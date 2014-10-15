@@ -1,6 +1,7 @@
 package lv.rtu.ui.forms.work;
 
 import com.google.inject.Inject;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
@@ -27,17 +28,45 @@ public class AudioForm extends WorkForm {
     Text fileNameLabel;
     Text userIdLabel;
     Text fileTypeLabel;
+    ImageButton sendButton;
 
     public AudioForm() {
         super();
+
+        sendButton = new ImageButton("/microphone.png", UI_BUTTON_SIZE, UI_BUTTON_SIZE);
+        sendButton.setOnAction((e) -> {
+            if (ping.getServerStatus()) {
+                Platform.runLater(new Runnable() {
+                    public void run() {
+                        try {
+                            connector.send(new ObjectFile(Commands.GENERAL.getValue(), "Transfer File",
+                                    fileType.getValue().toString() + " audio", fileName.getText(),
+                                    new AudioFileHandler().getRecognitionVoice("temp.wav"), accessToken, user));
+                            createDialogWindow(connector.recive().getMessage());
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        } catch (ClassNotFoundException e1) {
+                            e1.printStackTrace();
+                        }
+                    }
+                });
+            }
+        });
+
+        sendButton.setLayoutX(190);
+        sendButton.setLayoutY(250);
+        addTooltip(sendButton, "Take voice sample and send it to server");
+
         userIdLabel = new Text("User Id");
         userIdLabel.setLayoutX(120);
         userIdLabel.setLayoutY(80);
         userIdLabel.setFont(javafx.scene.text.Font.font(FONT, FontWeight.NORMAL, FONT_SIZE_TEXT));
+
         fileNameLabel = new Text("File name");
         fileNameLabel.setLayoutX(120);
         fileNameLabel.setLayoutY(110);
         fileNameLabel.setFont(javafx.scene.text.Font.font(FONT, FontWeight.NORMAL, FONT_SIZE_TEXT));
+
         fileTypeLabel = new Text("File type");
         fileTypeLabel.setLayoutX(120);
         fileTypeLabel.setLayoutY(140);
@@ -46,9 +75,11 @@ public class AudioForm extends WorkForm {
         userId = new TextField("");
         userId.setLayoutX(200);
         userId.setLayoutY(70);
+
         fileName = new TextField("");
         fileName.setLayoutX(200);
         fileName.setLayoutY(100);
+
         fileType = new ComboBox();
         addValuesToComboBox(fileType);
         fileType.setLayoutX(200);
@@ -56,24 +87,6 @@ public class AudioForm extends WorkForm {
     }
 
     public void open() {
-        ImageButton sendButton = new ImageButton("/microphone.png", UI_BUTTON_SIZE, UI_BUTTON_SIZE);
-        sendButton.setOnAction((e) -> {
-            if (ping.getServerStatus()) {
-                try {
-                    connector.send(new ObjectFile(Commands.GENERAL.getValue(), "Transfer File", fileType.getValue().toString() + " audio", fileName.getText(), new AudioFileHandler().getRecognitionVoice("temp.wav"), accessToken, user));
-                    ObjectFile receivedObject = connector.recive();
-                    createDialogWindow(receivedObject.getMessage());
-                    accessToken = receivedObject.getAccessToken();
-                } catch (IOException exception) {
-                    exception.printStackTrace();
-                } catch (ClassNotFoundException e1) {
-                    e1.printStackTrace();
-                }
-            }
-        });
-        sendButton.setLayoutX(190);
-        sendButton.setLayoutY(400);
-        addTooltip(sendButton, "Take voice sample and send it to server");
         if (!root.getChildren().contains(sendButton)) {
             stage.setScene(new Scene(root, FORM_SIZE_X, FORM_SIZE_Y));
             root.getChildren().add(fileName);
@@ -87,6 +100,7 @@ public class AudioForm extends WorkForm {
         stage.show();
     }
 
+
     public void addValuesToComboBox(ComboBox comboBox) {
         if (comboBox != null) {
             ObservableList<String> options =
@@ -97,5 +111,4 @@ public class AudioForm extends WorkForm {
             comboBox.setItems(options);
         }
     }
-
 }

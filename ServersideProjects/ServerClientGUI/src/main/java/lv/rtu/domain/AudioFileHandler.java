@@ -10,7 +10,7 @@ public class AudioFileHandler {
     FileHandler fileHandler;
     AudioRecorder recorder;
 
-    public byte[] getRecognitionVoice(String fileName){
+    public synchronized byte[] getRecognitionVoice(String fileName){
 
         filePath = path+fileName;
         fileHandler = new FileHandler();

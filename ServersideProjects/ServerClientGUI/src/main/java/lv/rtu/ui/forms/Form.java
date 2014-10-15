@@ -68,7 +68,9 @@ public class Form {
 
         closeButton.setOnAction((e) -> {
             try {
-                connector.send(new ObjectFile(Commands.EXIT.getValue(), null, user, accessToken));
+                if (ping.getServerStatus()) {
+                    connector.send(new ObjectFile(Commands.EXIT.getValue(), null, user, accessToken));
+                }
             } catch (IOException e1) {
                 e1.printStackTrace();
             }

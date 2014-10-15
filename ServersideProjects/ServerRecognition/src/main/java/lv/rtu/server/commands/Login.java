@@ -21,7 +21,7 @@ public class Login implements Command {
 
     @Override
     public ObjectFile executeCommand(ObjectFile objectFile) {
-        String messageCommand = objectFile.getMessage();
+        String messageCommand = objectFile.getSubCommand();
         Long userNumber = null;
 
         if (Commands.fromValue(messageCommand).equals(Commands.IMAGE)) {
@@ -35,7 +35,7 @@ public class Login implements Command {
             Pattern pattern = Pattern.compile("-?\\d+");
             Matcher matcher = pattern.matcher(result);
             if (matcher.find()) {
-                System.out.println(userNumber = Long.valueOf(matcher.group()));
+                userNumber = Long.valueOf(matcher.group());
             }
         }
 
@@ -46,7 +46,7 @@ public class Login implements Command {
                 AudioUtils.saveAudioStreamToFile(stream, fileName);
                 stream.close();
                 String[] result = RecognitionEngine.recogniseAudio(fileName);
-                System.out.println(userNumber = Long.valueOf(result[0]));
+                userNumber = Long.valueOf(result[0]);
             } catch (IOException e) {
                 e.printStackTrace();
             }

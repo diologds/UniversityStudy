@@ -31,12 +31,4 @@ public class LoginUtil {
            }
        }
     }
-
-    public static void main(String[] args){
-        String token = AuthorizationTokenGenerator.nextToken();
-        System.out.println(token);
-        LoginUtil.addUser("127.0.0.1:1234", new LoginInformation(token));
-        System.out.println(LoginUtil.isValid(token));
-    }
-
 }

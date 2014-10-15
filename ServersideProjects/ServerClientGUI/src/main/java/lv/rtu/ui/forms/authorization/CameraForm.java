@@ -62,7 +62,7 @@ public class CameraForm extends Form {
                 } catch (ClassNotFoundException e1) {
                     e1.printStackTrace();
                 }
-                stage.hide();
+                stage.close();
                 addForm.open();
             }
         });

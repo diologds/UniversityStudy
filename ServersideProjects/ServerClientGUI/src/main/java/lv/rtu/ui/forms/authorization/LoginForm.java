@@ -46,7 +46,7 @@ public class LoginForm extends Form {
         grid.add(userName, 0, 0);
 
         TextField userTextField = new TextField();
-        addTooltip(userTextField,"Insert you'r user credential here");
+        addTooltip(userTextField, "Insert you'r user credential here");
         userTextField.setText("");
         grid.add(userTextField, 1, 0);
 
@@ -69,14 +69,15 @@ public class LoginForm extends Form {
         root.getChildren().add(cameraButton);
         root.getChildren().add(microphoneButton);
 
-        establishConnection();
+        if (ping.getServerStatus()) {
+            establishConnection();
+        }
 
         microphoneButton.setOnAction((e) -> {
             if (StringUtils.isNumeric(userTextField.getText())) {
                 stage.hide();
                 user.setId(Long.valueOf(userTextField.getText()));
-                //microphoneForm.open();
-                addForm.open();
+                microphoneForm.open();
             } else {
                 createDialogWindow("Please input user credentials and check that it is numeric");
             }

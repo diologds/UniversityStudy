@@ -48,16 +48,16 @@ public class ConnectionThread extends Thread {
                 ObjectFile objectFile = injector.getInstance(ObjectTransfer.class).receiveFile(inStream);
                 String messageCommand = objectFile.getCommand();
 
-               /* if(!LoginUtil.isValid(objectFile.getAccessToken()) && !Commands.fromValue(messageCommand).equals(Commands.LOGIN)){
+                if(!LoginUtil.isValid(objectFile.getAccessToken()) &&
+                        !Commands.fromValue(messageCommand).equals(Commands.LOGIN) && !Commands.fromValue(messageCommand).equals(Commands.EXIT)){
                     outStream.writeObject(new ObjectFile("Please Login"));
                     continue;
-                }*/
+                }
 
                 switch(Commands.fromValue(messageCommand)){
                     case LOGIN:{
                         ObjectFile message = injector.getInstance(Key.get(Command.class, Names.named("Login"))).executeCommand(objectFile);
                         String token = AuthorizationTokenGenerator.nextToken();
-                        System.out.print(token);
                         message.setAccessToken(token);
                         LoginUtil.addUser(clientSocket.getInetAddress().toString(), new LoginInformation(token));
                         outStream.writeObject(message);
