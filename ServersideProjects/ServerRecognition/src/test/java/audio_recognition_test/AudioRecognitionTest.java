@@ -6,27 +6,35 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 public class AudioRecognitionTest {
-    private final double passLimit = 0.9;
-    private Map<Long, String> user = new HashMap<>();
-
+    private final double passLimit = 0.8;
+    private Map<Long, List<String>> user = new HashMap<>();
+    private final String path = "./resources/data/audio/testing/";
+    private final File folder = new File("./resources/data/audio/testing");
     @Before
     public void setup() {
         DataBaseFiller.fillDB();
         RecognitionEngine.trainRecognizers();
-
-        user.put(13l, "./resources/data/audio/testing/aleksandrs1.wav");
-        user.put(14l, "./resources/data/audio/testing/aihua1.wav");
-        user.put(15l, "./resources/data/audio/testing/alexandrm1.wav");
-        user.put(16l, "./resources/data/audio/testing/emily1.wav");
-        user.put(17l, "./resources/data/audio/testing/jim1.wav");
-        user.put(18l, "./resources/data/audio/testing/ke1.wav");
+        System.out.println(folder);
+        for (final File fileEntry : folder.listFiles()) {
+            Long userId = Long.parseLong(fileEntry.getName().replaceAll("\\D+",""));
+            if (!user.containsKey(userId)) {
+                List<String> list = new ArrayList<>();
+                list.add(fileEntry.getName());
+                user.put(userId, list);
+            } else {
+                user.get(userId).add(fileEntry.getName());
+            }
+        }
     }
 
     @After
@@ -37,14 +45,19 @@ public class AudioRecognitionTest {
     @Test
     public void recognizeByVoice() {
         int counter = 0;
+        int testCounter = 0;
         for (Long file : user.keySet()) {
-            String rec = RecognitionEngine.recogniseAudio(user.get(file))[0];
-            if (rec.contains(String.valueOf(file))) {
-                counter++;
+            for(String fileName : user.get(file)){
+                testCounter++;
+                System.out.println(path+fileName);
+                String[] rec = RecognitionEngine.recogniseAudio(path+fileName);
+                if (rec[0].contains(String.valueOf(file)) || rec[1].contains(String.valueOf(file))) {
+                    counter++;
+                }
             }
         }
-        assertThat("Recognition percentage is to low", (user.size() / counter > passLimit), is(true));
+        System.out.println("Test pass :" + counter + " , Test amount :" + testCounter +", Coverage :" + ((float)counter / testCounter));
+        assertThat("Recognition percentage is to low", (((float)counter / testCounter) > passLimit), is(true));
     }
-
 }
 

@@ -9,7 +9,9 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -17,16 +19,22 @@ import static org.hamcrest.Matchers.is;
 
 public class VideoRecognitionTest {
     private final double passLimit = 0.9;
-    private Map<Long , String> user = new HashMap<>();
+    private Map<Long, List<String>> user = new HashMap<>();
+    private final String path = "./resources/data/images/testing/";
+    private final File folder = new File("./resources/data/images/testing");
 
     @Before
     public void setup() {
-        user.put(13l, "./resources/data/images/testing/aleksandrs-1.png");
-        user.put(14l, "./resources/data/images/testing/aihua-1.jpg");
-        user.put(15l, "./resources/data/images/testing/alexandrm-1.jpg");
-        user.put(16l, "./resources/data/images/testing/emily-1.jpg");
-        user.put(17l, "./resources/data/images/testing/jim-1.jpg");
-        user.put(18l, "./resources/data/images/testing/ke-1.jpg");
+        for (final File fileEntry : folder.listFiles()) {
+            Long userId = Long.parseLong(fileEntry.getName().replaceAll("\\D+", ""));
+            if (!user.containsKey(userId)) {
+                List<String> list = new ArrayList<>();
+                list.add(fileEntry.getName());
+                user.put(userId, list);
+            } else {
+                user.get(userId).add(fileEntry.getName());
+            }
+        }
     }
 
     @After
@@ -36,26 +44,26 @@ public class VideoRecognitionTest {
 
     @Test
     public void recognizeByFace() {
+
         int counter = 0;
-        for(Long file : user.keySet()){
-            File imgLoc = new File(user.get(file));
-            BufferedImage img;
-            try {
-                img = ImageIO.read(imgLoc);
-                if(RecognitionEngine.recogniseImage(img).contains(String.valueOf(file))){
-                   counter++;
-                }
-            } catch (IOException ex) {
-                System.err.println(ex.getMessage());
-                ex.printStackTrace();
+        int testCounter = 0;
+        for (Long file : user.keySet()) {
+            for (String fileName : user.get(file)) {
+                testCounter++;
                 try {
-                    throw ex;
+                    File imgLoc = new File(path + fileName);
+                    BufferedImage img;
+                    img = ImageIO.read(imgLoc);
+                    if (RecognitionEngine.recogniseImage(img).contains(String.valueOf(file))) {
+                        counter++;
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
             }
         }
-        assertThat("Recognition percentage is to low",(user.size()/counter > passLimit), is(true));
+        System.out.println("Test pass :" + counter + " , Test amount :" + testCounter + ", Coverage :" + ((float) counter / testCounter));
+        assertThat("Recognition percentage is to low", (((float) counter / testCounter) > passLimit), is(true));
     }
-
 }

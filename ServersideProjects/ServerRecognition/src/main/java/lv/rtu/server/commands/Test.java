@@ -23,6 +23,6 @@ public class Test implements Command{
         for (Failure failure : result.getFailures()) {
             System.out.println(failure.toString());
         }
-        return new ObjectFile("Test executed");
+        return new ObjectFile("Test executed : result -> " + (result.wasSuccessful() ? "Pass" : "Failure"));
     }
 }
