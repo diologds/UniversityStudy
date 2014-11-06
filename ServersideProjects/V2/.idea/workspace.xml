@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d409c29-20dd-454d-a81b-3b4f2d33df43" name="Default" comment="" />
+    <ignored path="RecognitionServer.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415304940572" ignored="false" />
+    <file path="/VideoStreaming.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1398804854993" ignored="false" />
+    <file path="/TempVideo.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1392509366770" ignored="false" />
+    <file path="/pom.xml" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1392511201698" ignored="false" />
+    <file path="/VideoRecognitionEngine.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394409533011" ignored="false" />
+    <file path="/a.dummy" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395085955835" ignored="false" />
+    <file path="/ImageUtil.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1392752222875" ignored="false" />
+    <file path="/ConnectionThread.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415306257898" ignored="false" />
+    <file path="/ObjectFile.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415226844512" ignored="false" />
+    <file path="/ProcessConnectionData.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1414257542284" ignored="false" />
+    <file path="/FileTransfer.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413314666892" ignored="false" />
+    <file path="/fragment.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413482588970" ignored="false" />
+    <file path="/UserInterfaceDAO.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413140883038" ignored="false" />
+    <file path="/UserTableImplementationDAO.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413311898025" ignored="false" />
+    <file path="/UserTest.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393069972144" ignored="false" />
+    <file path="/AudioRecognitionEngine.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395964458492" ignored="false" />
+    <file path="/DataBaseFiller.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393100662673" ignored="false" />
+    <file path="/ConnectionHandler.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415307228410" ignored="false" />
+    <file path="/*.regexp" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415309446413" ignored="false" />
+    <file path="/RecognitionEngine.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394579436957" ignored="false" />
+    <file path="/FileProcessing.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393111492110" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/jdbc/ProducerDAOImpl.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148420432" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/web/index.html" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148176533" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/web/signIn.html" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148190345" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/web/WEB-INF/web.xml" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/CommodityStorageDAO.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148420432" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/jdbc/CommodityStorageDAOImpl.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148420432" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/test/lv/javaguru/java2/ishop/database/jdbc/CommodityDAOImplTest.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148420432" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/test/lv/javaguru/java2/ishop/database/jdbc/CommodityStorageDAOImplTest.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148420432" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/jdbc/CommodityDAOImpl.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148420432" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/CommodityDAO.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148420432" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/CategoryDAO.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148420432" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/web/index.jsp" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/jdbc/CategoryDAOImpl.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/domain/Category.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393148420432" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/domain/ImageConverter.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393150608589" ignored="false" />
+    <file path="/ImageConverter.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393149672905" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/test/lv/javaguru/java2/ishop/database/jdbc/CommodityViewDAOImplTest.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393150608589" ignored="false" />
+    <file path="/AudioUtils.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393541140831" ignored="false" />
+    <file path="/Maping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393450719643" ignored="false" />
+    <file path="/Mapping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1409599911191" ignored="false" />
+    <file path="$USER_HOME$/XugglerProject/src/main/java/DisplayWebcamVideo.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393457950575" ignored="false" />
+    <file path="/ProcessingStream.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393457862126" ignored="false" />
+    <file path="/ProcessStream.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415227778496" ignored="false" />
+    <file path="/AudioStreaming.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1398804826952" ignored="false" />
+    <file path="$USER_HOME$/XugglerProject/src/main/java/lv/rtu/domain/Client.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395792269852" ignored="false" />
+    <file path="$USER_HOME$/XugglerProject/src/main/java/Capture.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394571111034" ignored="false" />
+    <file path="/Capture.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393546526236" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/configs/test/ishop.properties" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393776446484" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/web/displayCategory.jsp" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/MVCFilter.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1393776440496" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/PlaceOrderController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394368094249" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/configs/ishop.properties" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/web/css/indexLayout.css" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/DisplayDescController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/SearchCommodityController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/EditCategoryController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/CommodityEditController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/configs/applicationContext.xml" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/web/static/footer.jsp" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/IndexController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/web/displayDesc.jsp" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/DisplayCategoryController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/CategoryController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/servlet/mvc/ImageServletController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394566457168" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/orm/CommodityViewDAOImpl.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394567457353" ignored="false" />
+    <file path="/CommodityViewDAOImpl.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394567390919" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/domain/CommodityView.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394568348617" ignored="false" />
+    <file path="/IPCameraControler.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394579506849" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/orm/ORMDaoImpl.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394572878140" ignored="false" />
+    <file path="$USER_HOME$/NetworkShop/javagurulv_java2_2014_internetshop/iShop/src/lv/javaguru/java2/ishop/database/orm/ORMDAOImpl.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394573201655" ignored="false" />
+    <file path="/IPCapture.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394573731903" ignored="false" />
+    <file path="/IPCamera.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394575893277" ignored="false" />
+    <file path="/ipCamMapping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394577364188" ignored="false" />
+    <file path="/IPCammeraThreadControler.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394577768979" ignored="false" />
+    <file path="/IPCammeraThreadController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394582079734" ignored="false" />
+    <file path="/IPCamMapping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1394581849538" ignored="false" />
+    <file path="/DBConnector.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395091403106" ignored="false" />
+    <file path="/DatabaseTools.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1409595465166" ignored="false" />
+    <file path="/NameGenerator.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395092469010" ignored="false" />
+    <file path="/IPCameraController.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1414084975096" ignored="false" />
+    <file path="$USER_HOME$/XugglerProject/.idea/workspace.xml" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395098806743" ignored="false" />
+    <file path="$USER_HOME$/XugglerProject/src/main/java/lv/rtu/domain/ObjectFile.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395097756800" ignored="false" />
+    <file path="/Video_Recognition_Test.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1395791939605" ignored="false" />
+    <file path="/AudioRecognitionTest.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415308295489" ignored="false" />
+    <file path="/Command.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1398806611107" ignored="false" />
+    <file path="/AddUser.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411415214629" ignored="false" />
+    <file path="/DeleteUser.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413145817396" ignored="false" />
+    <file path="/FillDB.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411417226543" ignored="false" />
+    <file path="/SetIPCameraMapping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411417337497" ignored="false" />
+    <file path="/SetMapping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1398982396433" ignored="false" />
+    <file path="/Train.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411417354409" ignored="false" />
+    <file path="/UpdateUser.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411417377936" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/sample/Main.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1406753905689" ignored="false" />
+    <file path="/Main.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410294690226" ignored="false" />
+    <file path="$PROJECT_DIR$/../SEF - Participants Workspace/SEF/src/sef/module9/activity/RadarImpl.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1407608081355" ignored="false" />
+    <file path="$PROJECT_DIR$/../SEF - Participants Workspace/SEF/src/sef/module11/activity/TextEditor.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1407781079044" ignored="false" />
+    <file path="/TextEditor.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1407781072033" ignored="false" />
+    <file path="$PROJECT_DIR$/../TestWeb/src/main/resources/dbConfig" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1408209813606" ignored="false" />
+    <file path="/HandlerModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1409594570768" ignored="false" />
+    <file path="/ConnectionModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1409851271577" ignored="false" />
+    <file path="/TreadFactory.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1409600433556" ignored="false" />
+    <file path="/Ping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410292336065" ignored="false" />
+    <file path="/ServerModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413320971718" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/NetworkUtils/Ping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410292341408" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/Main.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410294693015" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/forms/Form.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410295536209" ignored="false" />
+    <file path="/Form.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413401867932" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/pom.xml" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412103725547" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/models/ClientModel.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410292686204" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/modules/ClientModel.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410292789852" ignored="false" />
+    <file path="/ClientModel.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410294068877" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/modules/ClientModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410294073400" ignored="false" />
+    <file path="/ClientModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714562758" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/forms/LoginForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410294740341" ignored="false" />
+    <file path="/LoginForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413316056802" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/ui/forms/CameraForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467327323" ignored="false" />
+    <file path="/CameraForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413409794886" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/connection/sender/Connector.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410383712335" ignored="false" />
+    <file path="/Connector.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415229337141" ignored="false" />
+    <file path="/RecognizeImage.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411417171027" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/domain/ObjectFile.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467595171" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/ui_elements/Controller.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/Main.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/sample.fxml" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/CameraForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714551282" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/User.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411577101806" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/modules/ClientModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/Form.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/hs_err_pid5404.log" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/LoginForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412717380415" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/connection/sender/Connector.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/ui_elements/ImageButton.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/NetworkUtils/Ping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1410467979960" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/ObjectFile.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228111849" ignored="false" />
+    <file path="/Login.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413409540138" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/modules/ClientModule.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="/RecognizeAudio.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411416923727" ignored="false" />
+    <file path="/SetDataStreamMapping.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411417312116" ignored="false" />
+    <file path="/User.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411577088952" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/MicrophoneForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412525625933" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/AudioUtils.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411909869135" ignored="false" />
+    <file path="/MicrophoneForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413410526226" ignored="false" />
+    <file path="$PROJECT_DIR$/../AudioRecognition/src/com/authentificator/application/audio/sound_handler/AudioStreamHandler.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411914967217" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/AudioRecorder.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413408617504" ignored="false" />
+    <file path="/AudioRecorder.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413408127363" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/AudioFileHandler.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413408610528" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/FileHandler.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1411920216783" ignored="false" />
+    <file path="/AudioFileHandler.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413407955763" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/WorkForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714710641" ignored="false" />
+    <file path="/WorkForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714630972" ignored="false" />
+    <file path="/AuthorizationTokenGenerator.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412514059921" ignored="false" />
+    <file path="/LoginUtil.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412529556919" ignored="false" />
+    <file path="/LoginInformation.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412514826478" ignored="false" />
+    <file path="/Commands.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412520061330" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/enums/Commands.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412520064495" ignored="false" />
+    <file path="/StringUtils.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412522247217" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/AddUserForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714210864" ignored="false" />
+    <file path="/AddUserForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412714168314" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/RemoveForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412791022358" ignored="false" />
+    <file path="/RemoveForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413146439047" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/AddForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412791039101" ignored="false" />
+    <file path="/AddForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1412888175648" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/AddForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/RemoveForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/EditForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="/EditForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413137981204" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/ImageForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="/ImageForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413307568969" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/AudioForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/authorization/CameraForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/authorization/MicrophoneForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="/AudioForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413408682084" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/authorization/LoginForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413408945005" ignored="false" />
+    <file path="/Test.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413488901661" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/ui/forms/work/WorkForm.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415228129809" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/domain/ReturnArray.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413399435172" ignored="false" />
+    <file path="/ReturnArray.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413399432075" ignored="false" />
+    <file path="/VideoRecognitionTest.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1413488038038" ignored="false" />
+    <file path="$PROJECT_DIR$/../AkkaDemo/src/main/java/akka_test/message/AkkaWay.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415221802245" ignored="false" />
+    <file path="$PROJECT_DIR$/../AkkaDemo/src/main/java/akka_test/message/Master.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415222640837" ignored="false" />
+    <file path="$PROJECT_DIR$/../ServerClientGUI/src/main/java/lv/rtu/connection/Connector.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415230744648" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/AkkaDemo/src/main/java/akka_test/message/Master.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415306654389" ignored="false" />
+    <file path="/Master.java" changelist="1d409c29-20dd-454d-a81b-3b4f2d33df43" time="1415306650173" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="RecognitionServer" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ConnectionHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection/ConnectionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="40" selection-start="2063" selection-end="2063" vertical-scroll-proportion="0.5152838">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/db_tests/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/db/DatabaseTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/domain/AudioUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/domain/LoginUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/external_camera/IPCapture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/recognition/audio/AudioRecognitionEngine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/recognition/video/VideoRecognitionEngine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ProcessStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/Worker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/streaming/audio/AudioStreaming.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/streaming/video/VideoStreaming.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/test/java/audio_recognition_test/AudioRecognitionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/test/java/db_tests/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/test/java/video_recognition_test/VideoRecognitionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/video_recognition_test/VideoRecognitionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lv/rtu/server/connection/ConnectionHandler.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages ProjectPane="false" />
+      <showMembers ProjectPane="false" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages ProjectPane="true" />
+      <abbreviatePackageNames ProjectPane="false" />
+      <autoscrollToSource ProjectPane="false" />
+      <autoscrollFromSource ProjectPane="false" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video_recognition_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db_tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio_recognition_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db_tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio_recognition_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="streaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connection_thread" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="connection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="external_camera" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="lv/rtu/db">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerRecognition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../XugglerProject" />
+    <property name="project.structure.side.proportion" value="0.5133405" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="Downloaded.Files.Path" value="C:\Users\Aleksandrs\.m2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lv.rtu.server.commands" />
+      <recent name="audio_recognition_test" />
+      <recent name="video_recognition_test" />
+      <recent name="lv.rtu.recognition.audio" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu" />
+      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu\domain" />
+      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu\recognition\audio" />
+      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu\local_file_handler" />
+      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java\lv\rtu\video" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src\main\java" />
+      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition" />
+      <recent name="C:\Users\Aleksandrs\IdeaProjects\ServerRecognition\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ConnectionHandler">
+    <configuration default="false" name="ConnectionHandler" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="lv.rtu.server.connection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="lv.rtu.server.connection.ConnectionHandler" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IdeaProjects" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserTableImplementationDAO" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="lv.rtu.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="lv.rtu.db.UserTableImplementationDAO" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="IdeaProjects" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in IdeaProjects" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="IdeaProjects" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AudioRecognitionTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="audio_recognition_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="IdeaProjects" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java.audio_recognition_test" />
+      <option name="MAIN_CLASS_NAME" value="audio_recognition_test.AudioRecognitionTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="VideoRecognitionTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="video_recognition_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="IdeaProjects" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="java.video_recognition_test" />
+      <option name="MAIN_CLASS_NAME" value="video_recognition_test.VideoRecognitionTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.ConnectionHandler" />
+      <item index="1" class="java.lang.String" itemvalue="Application.UserTableImplementationDAO" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in IdeaProjects" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AudioRecognitionTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.VideoRecognitionTest" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.ConnectionHandler" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in IdeaProjects" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VideoRecognitionTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AudioRecognitionTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AudioRecognitionTest" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d409c29-20dd-454d-a81b-3b4f2d33df43" name="Default" comment="" />
+      <created>1391871412346</created>
+      <updated>1391871412346</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14795919" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31911263" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.334471" sideWeight="0.82878786" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25597268" sideWeight="0.2159091" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25454545" sideWeight="0.21331058" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31740615" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18259385" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.75680274" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25454545" sideWeight="0.43515357" order="0" side_tool="false" content_ui="combo" x="462" y="167" width="441" height="393" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5648464" sideWeight="0.78409094" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993174" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="VssConfiguration">
+    <option name="CLIENT_PATH" value="" />
+    <option name="SRCSAFEINI_PATH" value="" />
+    <option name="USER_NAME" value="" />
+    <option name="PWD" value="" />
+    <CheckoutOptions>
+      <option name="COMMENT" value="" />
+      <option name="DO_NOT_GET_LATEST_VERSION" value="false" />
+      <option name="REPLACE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckoutOptions>
+    <CheckinOptions>
+      <option name="COMMENT" value="" />
+      <option name="KEEP_CHECKED_OUT" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckinOptions>
+    <AddOptions>
+      <option name="STORE_ONLY_LATEST_VERSION" value="false" />
+      <option name="CHECK_OUT_IMMEDIATELY" value="false" />
+    </AddOptions>
+    <UndocheckoutOptions>
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="REPLACE_LOCAL_COPY" value="2" />
+      <option name="RECURSIVE" value="false" />
+    </UndocheckoutOptions>
+    <GetOptions>
+      <option name="REPLACE_WRITABLE" value="0" />
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="ANSWER_NEGATIVELY" value="false" />
+      <option name="ANSWER_POSITIVELY" value="false" />
+      <option name="RECURSIVE" value="false" />
+      <option name="VERSION" />
+    </GetOptions>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/domain/AudioUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="8" selection-start="1497" selection-end="1497" vertical-scroll-proportion="9.019608">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/domain/LoginUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="38" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/db_tests/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="345" selection-end="411" vertical-scroll-proportion="-4.7647057">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/external_camera/IPCapture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="4" selection-start="783" selection-end="850" vertical-scroll-proportion="-3.2941177">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/recognition/audio/AudioRecognitionEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="12" selection-start="6118" selection-end="6118" vertical-scroll-proportion="-1.9607843">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/audio_recognition_test/AudioRecognitionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="83" selection-start="717" selection-end="795" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/recognition/video/VideoRecognitionEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="4" selection-start="1396" selection-end="1476" vertical-scroll-proportion="0.25776398">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1212#1242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/ProcessStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="383" selection-end="454" vertical-scroll-proportion="0.5745342">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection_thread/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="4" selection-start="789" selection-end="853" vertical-scroll-proportion="-1.882353">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/streaming/video/VideoStreaming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="4" selection-start="489" selection-end="561" vertical-scroll-proportion="-3.5490196">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/test/java/audio_recognition_test/AudioRecognitionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="4" selection-start="701" selection-end="779" vertical-scroll-proportion="-3.8823528">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/test/java/db_tests/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="362" selection-end="428" vertical-scroll-proportion="-3.2941177">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/test/java/video_recognition_test/VideoRecognitionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="39" selection-start="508" selection-end="508" vertical-scroll-proportion="-1.3137255">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/streaming/audio/AudioStreaming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="4" selection-start="563" selection-end="635" vertical-scroll-proportion="-4.2941175">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/video_recognition_test/VideoRecognitionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="74" selection-start="525" selection-end="525" vertical-scroll-proportion="0.32686085">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lv/rtu/server/connection/ConnectionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="40" selection-start="2063" selection-end="2063" vertical-scroll-proportion="0.5152838">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5133405" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5133405" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5133405" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5133405" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>IdeaProjects</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5133405" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.5133405" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
