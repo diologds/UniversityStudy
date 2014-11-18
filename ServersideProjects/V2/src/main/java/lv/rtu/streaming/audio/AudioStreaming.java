@@ -4,7 +4,6 @@ import lv.rtu.domain.AudioUtils;
 import lv.rtu.domain.NameGenerator;
 import lv.rtu.maping.DataStreamMapping;
 import lv.rtu.recognition.RecognitionEngine;
-import org.apache.log4j.Logger;
 import org.xiph.speex.SpeexDecoder;
 
 import javax.sound.sampled.AudioInputStream;
@@ -18,8 +17,6 @@ public class AudioStreaming implements Runnable {
 
     private int portServer;
     private int portClient;
-
-    static Logger LOGGER = Logger.getLogger(AudioStreaming.class.getName());
 
     public AudioStreaming(int portServer, int portClient) {
         this.portServer = portServer;
@@ -51,12 +48,12 @@ public class AudioStreaming implements Runnable {
                 byte data[] = new byte[speexDecoder.getProcessedDataByteSize()];
                 speexDecoder.getProcessedData(data, 0);
 
-                LOGGER.info("Data length: " + data.length);
+                System.out.println("Data length: " + data.length);
 
                 storeBuffer.put(data);
                 if (storeBuffer.position() > 114000) {
                     String host = DataStreamMapping.getDestination(packet.getAddress().toString().substring(1));
-                    LOGGER.info("Client IP : " + packet.getAddress().toString());
+                    System.out.println("Client IP : " + packet.getAddress().toString());
 
                     AudioInputStream stream = AudioUtils.soundBytesToAudio(storeBuffer.array());
                     storeBuffer.clear();

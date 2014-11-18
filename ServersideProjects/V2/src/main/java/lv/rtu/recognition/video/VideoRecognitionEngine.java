@@ -2,7 +2,6 @@ package lv.rtu.recognition.video;
 
 import lv.rtu.db.UserTableImplementationDAO;
 import lv.rtu.domain.User;
-import org.apache.log4j.Logger;
 import org.openimaj.image.FImage;
 import org.openimaj.image.ImageUtilities;
 import org.openimaj.image.processing.face.alignment.AffineAligner;
@@ -29,7 +28,6 @@ public class VideoRecognitionEngine {
             new LtpDtFeature.Factory<KEDetectedFace>(new AffineAligner(), new TruncatedWeighting()),
             new LtpDtFeatureComparator(), 4);
 
-    static Logger LOGGER = Logger.getLogger(VideoRecognitionEngine.class.getName());
 
     public synchronized String recognise(BufferedImage bImageFromConvert) {
         String result = null;
@@ -38,9 +36,9 @@ public class VideoRecognitionEngine {
         if (faces.size() == 1) {
             faces.get(0);
             result = recogniser.queryBestMatch(faces.get(0)).toString();
-            LOGGER.info("Looks like: " + result);
+            System.out.println("Looks like: " + result);
         } else {
-            LOGGER.info("Wrong number of faces found");
+            System.out.println("Wrong number of faces found");
         }
         return result;
     }
@@ -55,7 +53,7 @@ public class VideoRecognitionEngine {
             if (listOfFiles[i].isFile()) {
                 fullPath = listOfFiles[i].getName();
                 fileName = fullPath.split("-")[0];
-                LOGGER.info("File " + fullPath);
+                System.out.println("File " + fullPath);
                 try {
                     originalImage = ImageIO.read(new File(".\\resources\\data\\images\\training\\" + fullPath));
                 } catch (IOException e) {
@@ -67,7 +65,7 @@ public class VideoRecognitionEngine {
                 if(table.findUserByAudioFileName(fileName)!= null)
                     recogniser.addInstance((((User) table.findUserByImageFileName(fullPath)).getId()).toString(), faces.get(0));
             } else if (listOfFiles[i].isDirectory()) {
-                LOGGER.info("Directory " + listOfFiles[i].getName());
+                System.out.println("Directory " + listOfFiles[i].getName());
             }
         }
         recogniser.train();

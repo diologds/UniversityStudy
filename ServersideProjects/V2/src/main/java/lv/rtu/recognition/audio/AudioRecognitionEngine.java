@@ -10,7 +10,6 @@ import marf.Storage.TrainingSet;
 import marf.util.Debug;
 import marf.util.MARFException;
 import marf.util.OptionProcessor;
-import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.util.Date;
@@ -20,16 +19,15 @@ import java.util.regex.Pattern;
 public class AudioRecognitionEngine {
 
     private UserTableImplementationDAO table = new UserTableImplementationDAO();
-    protected OptionProcessor soGetOpt = new OptionProcessor();
 
-    static Logger LOGGER = Logger.getLogger(AudioRecognitionEngine.class.getName());
+    protected OptionProcessor soGetOpt = new OptionProcessor();
 
     public synchronized void configure() {
         try {
             validateVersions();
             setDefaultConfig();
         } catch (MARFException e) {
-            LOGGER.info("Configuration Installation Error");
+            System.out.println("Configuration Installation Error");
         }
     }
 
@@ -56,13 +54,13 @@ public class AudioRecognitionEngine {
                         if(table.findUserByAudioFileName(name)!= null){
                             TimeUnit.NANOSECONDS.sleep(100);
                             train(strFileName);
-                            LOGGER.info("Done training with " + strFileName);
+                            System.out.println("Done training with " + strFileName);
                         }
                         else {
 
                         }
                     } catch (MARFException e) {
-                        LOGGER.info("Error in training mode");
+                        System.out.println("Error in training mode");
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -74,7 +72,7 @@ public class AudioRecognitionEngine {
             System.exit(-1);
         }
 
-        LOGGER.info("Done training on folder \"" + fileName + "\".");
+        System.out.println("Done training on folder \"" + fileName + "\".");
 
     }
 
@@ -91,7 +89,7 @@ public class AudioRecognitionEngine {
         if (piExpectedID > 0) {
             String[] files = pstrFilename.split("/");
             String name = files[files.length - 1];
-            LOGGER.info("Converted name : " + name);
+            System.out.println("Converted name : " + name);
             piExpectedID = Ints.checkedCast(((User) table.findUserByAudioFileName(name)).getId());
             expected = ((User) table.select((long) piExpectedID)).getUserName();
         }
@@ -106,25 +104,25 @@ public class AudioRecognitionEngine {
         int iSecondClosestID = MARF.getResultSet().getSecondClosestID();
         String secondBestName = ((User) table.select((long) iSecondClosestID)).getUserName();
 
-        LOGGER.info("----------------------------8<------------------------------");
-        LOGGER.info("                 File: " + pstrFilename);
-        LOGGER.info("               Config: " + pstrConfig);
-        LOGGER.info("         Speaker's ID: " + iIdentifiedID);
-        LOGGER.info("   Speaker identified: " + firstBestName);
+        System.out.println("----------------------------8<------------------------------");
+        System.out.println("                 File: " + pstrFilename);
+        System.out.println("               Config: " + pstrConfig);
+        System.out.println("         Speaker's ID: " + iIdentifiedID);
+        System.out.println("   Speaker identified: " + firstBestName);
 
 		/*
          * Only collect stats if we have expected speaker
 		 */
 
         if (piExpectedID > 0) {
-            LOGGER.info("Expected Speaker's ID: " + piExpectedID);
-            LOGGER.info("     Expected Speaker: " + expected);
+            System.out.println("Expected Speaker's ID: " + piExpectedID);
+            System.out.println("     Expected Speaker: " + expected);
         }
 
-        LOGGER.info("       Second Best ID: " + iSecondClosestID);
-        LOGGER.info("     Second Best Name: " + secondBestName);
-        LOGGER.info("            Date/time: " + new Date());
-        LOGGER.info("----------------------------8<------------------------------");
+        System.out.println("       Second Best ID: " + iSecondClosestID);
+        System.out.println("     Second Best Name: " + secondBestName);
+        System.out.println("            Date/time: " + new Date());
+        System.out.println("----------------------------8<------------------------------");
 
         return new String[] {String.valueOf(iIdentifiedID), String.valueOf(iSecondClosestID)};
     }
@@ -143,7 +141,7 @@ public class AudioRecognitionEngine {
                 try {
                     ident(strFileName);
                 } catch (MARFException e) {
-                    LOGGER.info("Error in Identification");
+                    System.out.println("Error in Identification");
                 }
             }
         }
@@ -163,7 +161,7 @@ public class AudioRecognitionEngine {
         int iID = Ints.checkedCast(((User) table.findUserByAudioFileName(pstrFilename)).getId());
 
         if (iID == -1) {
-            LOGGER.info("No speaker found for \"" + pstrFilename + "\" for training.");
+            System.out.println("No speaker found for \"" + pstrFilename + "\" for training.");
         } else {
             MARF.setCurrentSubject(iID);
             MARF.train();
