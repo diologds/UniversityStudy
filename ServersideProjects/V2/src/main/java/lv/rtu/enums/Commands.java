@@ -1,7 +1,7 @@
 package lv.rtu.enums;
 
 public enum Commands {
-    LOGIN("login"), EXIT("exit"), STREAM("stream"), GENERAL("general"), IMAGE("image"), AUDIO("audio");
+    LOGIN("login"), EXIT("exit"), STREAM("stream"), GENERAL("general"), IMAGE("image"), AUDIO("audio"), MOBILE("mobile");
     private String value;
 
     Commands(String value) {
@@ -21,6 +21,8 @@ public enum Commands {
             return AUDIO;
         else if (value.equals(GENERAL.value))
             return GENERAL;
+        else if (value.equals(MOBILE.value))
+            return MOBILE;
         else return null;
     }
 }

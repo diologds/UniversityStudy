@@ -1,9 +1,13 @@
 package lv.rtu.domain;
 
+import org.apache.log4j.Logger;
+
 import javax.sound.sampled.*;
 import java.io.*;
 
 public class AudioUtils {
+
+    static Logger LOGGER = Logger.getLogger(AudioUtils.class.getName());
 
     public static AudioFormat getAudioFormat() {
         float sampleRate = 8000;
@@ -37,19 +41,19 @@ public class AudioUtils {
     {
         AudioFormat audioFormat = audioInputStream.getFormat();
         float sample_rate = audioFormat.getSampleRate();
-        System.out.println("sample rate = "+sample_rate);
+        LOGGER.info("sample rate = "+sample_rate);
 
         //Calculate the length in seconds of the sample
         float T = audioInputStream.getFrameLength() / audioFormat.getFrameRate();
-        System.out.println("T = "+T+ " (length of sampled sound in seconds)");
+        LOGGER.info("T = "+T+ " (length of sampled sound in seconds)");
 
         //Calculate the number of equidistant points in time
         int n = (int) (T * sample_rate) / 2;
-        System.out.println("n = "+n+" (number of equidistant points)");
+        LOGGER.info("n = "+n+" (number of equidistant points)");
 
         //Calculate the time interval at each equidistant point
         float h = (T / n);
-        System.out.println("h = "+h+" (length of each time interval in seconds)");
+        LOGGER.info("h = "+h+" (length of each time interval in seconds)");
 
         //Determine the original Endian encoding format
         boolean isBigEndian = audioFormat.isBigEndian();

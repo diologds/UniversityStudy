@@ -52,8 +52,8 @@ public class Worker extends UntypedActor {
                 ObjectFile objectFile = injector.getInstance(ObjectTransfer.class).receiveFile(inStream);
                 String messageCommand = objectFile.getCommand();
 
-                if (!LoginUtil.isValid(objectFile.getAccessToken()) &&
-                        !Commands.fromValue(messageCommand).equals(Commands.LOGIN) && !Commands.fromValue(messageCommand).equals(Commands.EXIT)) {
+                if (!LoginUtil.isValid(objectFile.getAccessToken()) && !Commands.fromValue(messageCommand).equals(Commands.LOGIN)
+                        && !Commands.fromValue(messageCommand).equals(Commands.EXIT) && !Commands.fromValue(messageCommand).equals(Commands.MOBILE)) {
                     outStream.writeObject(new ObjectFile("Please Login"));
                     continue;
                 }
@@ -70,6 +70,12 @@ public class Worker extends UntypedActor {
                     }
                     break;
                     case GENERAL: {
+                        ObjectFile message = injector.getInstance(ProcessConnectionData.class).objectAnalysis(objectFile);
+                        outStream.writeObject(message);
+                    }
+                    break;
+                    case MOBILE: {
+                        System.out.println(objectFile.toString());
                         ObjectFile message = injector.getInstance(ProcessConnectionData.class).objectAnalysis(objectFile);
                         outStream.writeObject(message);
                     }

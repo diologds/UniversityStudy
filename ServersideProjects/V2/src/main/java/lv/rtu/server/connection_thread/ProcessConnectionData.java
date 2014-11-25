@@ -39,6 +39,7 @@ public class ProcessConnectionData {
     }
 
     public ObjectFile objectAnalysis(ObjectFile objectFile) {
+        System.out.println(objectFile.getSubCommand());
         return menuOptionMap.get(objectFile.getSubCommand()).executeCommand(objectFile);
     }
 

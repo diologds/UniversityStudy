@@ -5,11 +5,14 @@ import lv.rtu.enums.Commands;
 import lv.rtu.server.network_util.AvailablePortFinder;
 import lv.rtu.streaming.audio.AudioStreaming;
 import lv.rtu.streaming.video.VideoStreaming;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 
 public class ProcessStream {
+
+    static Logger LOGGER = Logger.getLogger(ProcessStream.class.getName());
 
     public void processStream(ObjectFile objectFile, ObjectOutputStream out) {
         int clientPort;
@@ -19,7 +22,7 @@ public class ProcessStream {
             case IMAGE: {
                 clientPort = Integer.valueOf(objectFile.getData());
                 serverPort = AvailablePortFinder.getNextAvailable();
-                System.out.println("Generated port : " + serverPort);
+                LOGGER.info("Generated port : " + serverPort);
                 objectFile.setMessage(String.valueOf(serverPort));
                 try {
                     out.writeObject(objectFile);
@@ -35,7 +38,7 @@ public class ProcessStream {
             case AUDIO: {
                 clientPort = Integer.valueOf(objectFile.getData());
                 serverPort = AvailablePortFinder.getNextAvailable();
-                System.out.println("Generated port : " + serverPort);
+                LOGGER.info("Generated port : " + serverPort);
                 objectFile.setMessage(String.valueOf(serverPort));
                 try {
                     out.writeObject(objectFile);

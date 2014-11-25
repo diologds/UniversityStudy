@@ -1,6 +1,7 @@
 package lv.rtu.test.java.video_recognition_test;
 
 import lv.rtu.recognition.RecognitionEngine;
+import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,6 +23,8 @@ public class VideoRecognitionTest {
     private Map<Long, List<String>> user = new HashMap<>();
     private final String path = "./resources/data/images/testing/";
     private final File folder = new File("./resources/data/images/testing");
+
+    static Logger LOGGER = Logger.getLogger(VideoRecognitionTest.class.getName());
 
     @Before
     public void setup() {
@@ -63,7 +66,7 @@ public class VideoRecognitionTest {
 
             }
         }
-        System.out.println("Test pass :" + counter + " , Test amount :" + testCounter + ", Coverage :" + ((float) counter / testCounter));
+        LOGGER.info("Test pass :" + counter + " , Test amount :" + testCounter + ", Coverage :" + ((float) counter / testCounter));
         assertThat("Recognition percentage is to low", (((float) counter / testCounter) > passLimit), is(true));
     }
 }

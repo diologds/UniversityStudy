@@ -1,10 +1,14 @@
 package lv.rtu.db;
 
+import org.apache.log4j.Logger;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseTools extends DBConnector {
+
+    static Logger LOGGER = Logger.getLogger(DatabaseTools.class.getName());
 
     private List<String> getDatabaseMetaData(Connection connection) {
         List<String> tableList = new ArrayList<String>();
@@ -49,7 +53,7 @@ public class DatabaseTools extends DBConnector {
                 stmt.execute("SET FOREIGN_KEY_CHECKS=1");
                 connection.commit();
             } catch (SQLException s) {
-                System.out.println("Deleted All Rows In  Table Error. ");
+                LOGGER.info("Deleted All Rows In  Table Error. ");
                 s.printStackTrace();
             } finally {
                 connection.close();

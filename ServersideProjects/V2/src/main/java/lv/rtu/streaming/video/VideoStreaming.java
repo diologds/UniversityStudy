@@ -2,6 +2,7 @@ package lv.rtu.streaming.video;
 
 import lv.rtu.maping.DataStreamMapping;
 import lv.rtu.recognition.RecognitionEngine;
+import org.apache.log4j.Logger;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -15,6 +16,8 @@ public class VideoStreaming implements Runnable {
 
     private int portServer;
     private int portClient;
+
+    static Logger LOGGER = Logger.getLogger(VideoStreaming.class.getName());
 
     public VideoStreaming(int portServer, int portClient) {
         this.portServer = portServer;
@@ -39,15 +42,15 @@ public class VideoStreaming implements Runnable {
                     InputStream in = new ByteArrayInputStream(packet.getData());
                     BufferedImage image = ImageIO.read(in);
                     String host = DataStreamMapping.getDestination(packet.getAddress().toString().substring(1));
-                    System.out.println("Client IP : " + packet.getAddress().toString());
+                    LOGGER.info("Client IP : " + packet.getAddress().toString());
                     String result = RecognitionEngine.recogniseImage(image);
-                    System.out.println("Result : " + result);
-                    System.out.println("Sending data to port : " + portClient + " :: Client host :" + host);
+                    LOGGER.info("Result : " + result);
+                    LOGGER.info("Sending data to port : " + portClient + " :: Client host :" + host);
                     sSocket.send(new DatagramPacket(result.getBytes(), result.getBytes().length, InetAddress.getByName(host), portClient));
                 }
 
             } while (packet.getLength() > 0);
-            System.out.println("User has left stream ");
+            LOGGER.info("User has left stream ");
         } catch (Exception e) {
             e.printStackTrace();
         }

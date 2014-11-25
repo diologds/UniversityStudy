@@ -13,10 +13,8 @@ public class LoginUtil {
     }
 
     public static boolean isValid(String token){
-        System.out.println(token);
         for(LoginInformation information : userMap.values()){
             if(information.getToken().equals(token)) {
-                System.out.println("True");
                 return true;
             }
         }

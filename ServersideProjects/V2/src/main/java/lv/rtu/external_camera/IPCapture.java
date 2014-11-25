@@ -1,6 +1,7 @@
 package lv.rtu.external_camera;
 
 import ipcapture.Base64Encoder;
+import org.apache.log4j.Logger;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -24,6 +25,8 @@ public class IPCapture implements Runnable {
     private ByteArrayOutputStream jpgOut;
     private volatile boolean keepAlive;
 
+    static Logger LOGGER = Logger.getLogger(IPCapture.class.getName());
+
     public IPCapture(String urlString, String user, String pass) {
         super();
         this.urlString = urlString;
@@ -45,7 +48,7 @@ public class IPCapture implements Runnable {
 
     public void start() {
         if (streamReader != null && streamReader.isAlive()) {
-            System.out.println("Camera already started");
+            LOGGER.info("Camera already started");
             return;
         }
         streamReader = new Thread(this, "HTTP Stream reader");
@@ -62,7 +65,7 @@ public class IPCapture implements Runnable {
 
     public void stop() {
         if (streamReader == null || !streamReader.isAlive()) {
-            System.out.println("Camera already stopped");
+            LOGGER.info("Camera already stopped");
             return;
         }
         keepAlive = false;

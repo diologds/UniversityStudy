@@ -4,7 +4,6 @@ import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
 import lv.rtu.db.DatabaseTools;
 import lv.rtu.db.UserTableImplementationDAO;
-import lv.rtu.factories.TreadFactory;
 import lv.rtu.server.commands.*;
 import lv.rtu.server.connection_thread.ProcessConnectionData;
 import lv.rtu.server.connection_thread.ProcessStream;
@@ -19,7 +18,6 @@ public class ServerModule extends AbstractModule {
         bind(ObjectTransfer.class);
         bind(ProcessConnectionData.class);
         bind(ProcessStream.class);
-        bind(TreadFactory.class);
 
         bind(Ping.class);
 
@@ -54,7 +52,7 @@ public class ServerModule extends AbstractModule {
                 .to(RecognizeImage.class);
         bind(Command.class)
                 .annotatedWith(Names.named("RecognizeAudio"))
-                .to(RecognizeImage.class);
+                .to(RecognizeAudio.class);
         bind(Command.class)
                 .annotatedWith(Names.named("Login"))
                 .to(Login.class);
